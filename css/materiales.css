@@ -1,0 +1,168 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-secondary: #2563eb;
+  --background-light: #f0f9ff;
+  --text-dark: #1a365d;
+  --text-light: #6b7280;
+  --transition-speed: 0.3s;
+}
+
+/* Hero Section Styles */
+#materiales-hero {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-explore:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Recursos Section */
+.recursos-section {
+  background: var(--background-light);
+  padding: 4rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.section-description {
+  color: var(--text-light);
+}
+
+.recursos-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--text-dark);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.filter-btn.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.recurso-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all var(--transition-speed) ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recurso-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.recurso-icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.recurso-title {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.recurso-description {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.recurso-btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: background var(--transition-speed) ease;
+}
+
+.recurso-btn:hover {
+  background: var(--color-secondary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .recursos-filters {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    margin-bottom: 0.5rem;
+  }
+}

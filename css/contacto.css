@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #3b82f6;
+    /* Color principal */
+    --secondary-color: #2563eb;
+    /* Color secundario */
+    --text-dark: #1a365d;
+    /* Color de texto oscuro */
+    --background-light: #f0f9ff;
+    /* Color de fondo claro */
+    --border-radius: 0.5rem;
+    /* Radio de borde para elementos redondeados */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    /* Color de fondo del cuerpo */
+}
+
+#contacto-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+.contact-section {
+    padding: 4rem 0;
+    background-color: var(--background-light);
+}
+
+.contact-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-danger {
+    background-color: #dc2626;
+    /* Color para redes sociales */
+}
+
+.bg-success {
+    background-color: #16a34a;
+    /* Color para ubicación */
+}
+
+.schedule {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.contact-map {
+    margin-top: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    z-index: 1;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background: var(--secondary-color);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* Espaciado entre los iconos sociales */
+}
+
+.social-link {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    /* Tamaño del icono */
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: var(--secondary-color);
+    /* Cambio de color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .contact-card {
+        margin-bottom: 2rem;
+    }
+}
+
+.about-section {
+    background-color: var(--background-light);
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.profile-image-container {
+    position: relative;
+}
+
+.profile-image-wrapper {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* Asegura que la imagen sea circular */
+}
+
+.skills-container {
+    margin-top: 2rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    /* Aumenta la visibilidad del texto */
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: var(--border-radius);
+    height: 10px;
+    margin-top: 0.5rem;
+}
+
+.skill-level {
+    background: var(--primary-color);
+    height: 100%;
+    border-radius: var(--border-radius);
+}

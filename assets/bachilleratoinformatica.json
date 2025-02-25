@@ -1,0 +1,639 @@
+{
+    "primer_año": {
+        "materias": [{
+                "nombre": "Análisis y Producción de Texto",
+                "programa": null,
+                "contenidos": null
+            },
+            "Ciencias Sociales - Historia",
+            "Inglés",
+            "Matemática (Programa Equivalente)",
+            "Química",
+            "Biología CTS",
+            "Lógica para Informática",
+            "Métodos Discretos",
+            "Sistemas Operativos I",
+            "Programación I",
+            "Lab. Soporte Equipos Informáticos",
+            "Lab. de Tecnologías Eléctricas Aplicadas",
+            "Geometría (Programa Equivalente)"
+        ]
+    },
+    "segundo_año": {
+        "materias": [{
+                "nombre": "Análisis y Producción de Texto",
+                "programa": null,
+                "contenidos": null
+            },
+            {
+                "nombre": "Ciencias Sociales - Economía",
+                "programa": null
+            },
+            {
+                "nombre": "Inglés",
+                "programa": null
+            },
+            {
+                "nombre": "Física",
+                "programa": null
+            },
+            {
+                "nombre": "Matemática (Programa equivalente)",
+                "programa": null
+            },
+            {
+                "nombre": "Geometría (Programa equivalente)",
+                "programa": null
+            },
+            {
+                "nombre": "Diseño Web",
+                "programa": null
+            },
+            {
+                "nombre": "Programación II",
+                "programa": null
+            },
+            {
+                "nombre": "Sistemas Operativos II",
+                "programa": null
+            },
+            {
+                "nombre": "Base de Datos I",
+                "programa": null
+            },
+            {
+                "nombre": "Electrónica Aplicada a la Informática",
+                "programa": null
+            },
+            {
+                "nombre": "Lab. de Redes de Área Local",
+                "programa": null
+            }
+        ]
+    },
+    "tercer_año": {
+        "materias": [{
+                "nombre": "Ciencias Sociales - Sociología",
+                "programa": null,
+                "contenidos": null
+            },
+            {
+                "nombre": "Filosofía",
+                "programa": null
+            },
+            {
+                "nombre": "Inglés",
+                "programa": null
+            },
+            {
+                "nombre": "Matemática (Programa equivalente)",
+                "programa": null
+            },
+            {
+                "nombre": "Análisis y Diseño de Aplicaciones",
+                "programa": "doc/planes/btinformatica/AnálisisDiseñoAplicacionesWeb.pdf",
+                "contenidos": {
+                    "unidad1": {
+                        "titulo": "Introducción General",
+                        "temas": [
+                            "Ingeniería de software",
+                            "Principios, Introducción, Análisis y Diseño de Sistemas.",
+                            "Objetivos del Análisis y el Diseño",
+                            "Identificación de Necesidades",
+                            "Reconocimiento del problema.",
+                            "Evaluación y Síntesis.",
+                            "Modelado.",
+                            "Especificación.",
+                            "Revisión.",
+                            "Etapas para el desarrollo de sistemas Informáticos",
+                            "Especificación de requerimientos",
+                            "Análisis",
+                            "Diseño",
+                            "Codificación",
+                            "Prueba",
+                            "Mantenimiento y actualización",
+                            "Concepto de calidad.",
+                            "La calidad en el software.",
+                            "Cualidades.",
+                            "Rol del Bachiller Tecnológico"
+                        ]
+                    },
+                    "unidad2": {
+                        "titulo": "Análisis de Sistemas de información",
+                        "temas": [
+                            "Etapas de Investigación",
+                            "Observación",
+                            "Revisión de registros",
+                            "Cuestionarios (Manager Meeting)",
+                            "Entrevistas (Abiertas - Cerradas)",
+                            "Encuestas",
+                            "Investigación inicial (IEEE 830)",
+                            "Especificación de Requerimientos (Trabajo de Campo real)",
+                            "Necesidad de definir el propósito del sistema",
+                            "Requerimientos Funcionales",
+                            "Requerimientos No Funcionales",
+                            "Normativa vigente"
+                        ]
+                    },
+                    "unidad3": {
+                        "titulo": "Administración del proceso de desarrollo del sistema",
+                        "temas": [
+                            "Planeación del sistema",
+                            "Manejo de decisiones",
+                            "Árbol de decisión",
+                            "Tabla de decisión",
+                            "Definición del problema real (sintomatología)",
+                            "Estudio y definición de actores del sistema",
+                            "Participantes en Proyectos de desarrollo de sistemas.",
+                            "Identificación y clasificación",
+                            "Estudio de Factibilidades",
+                            "Operativa",
+                            "Técnica",
+                            "Económica",
+                            "Legal"
+                        ]
+                    },
+                    "unidad4": {
+                        "titulo": "Diagramas y Modelado de Sistemas",
+                        "temas": [
+                            "Modelo Esencial",
+                            "Definición del Modelo Esencial",
+                            "Enfoque clásico (Ventajas y desventajas)",
+                            "Componentes de Modelo Esencial",
+                            "Diagramas de flujo de datos. (Introductorio)",
+                            "Construcción (componentes y definiciones)",
+                            "Ejemplificación y aplicación",
+                            "Descripción del diagrama de flujo de datos",
+                            "Diccionario de Datos. Expresiones regulares.",
+                            "Unified Modeling Language (U.M.L.)",
+                            "Estandarización",
+                            "Artefactos informáticos",
+                            "Diagramas gráficos en U.M.L.",
+                            "Diagramas de Implementación.",
+                            "Diagramas de Comportamiento o Interacción.",
+                            "Diagramas de Clases (Introductorio)",
+                            "Diagramas de transición de estado",
+                            "Diagramas de Casos de uso.",
+                            "Secuencia de transacciones",
+                            "Instancias de los Casos de Uso (Escenarios)",
+                            "Diseño (Diagrama y Planilla)"
+                        ]
+                    },
+                    "unidad5": {
+                        "titulo": "Diseño de Sistemas (Herramientas y Técnicas)",
+                        "temas": [
+                            "Objetivos del diseño",
+                            "Aplicación de Técnicas y diagramas estudiados",
+                            "Diseño tradicional vs prototipos (Ejemplos)",
+                            "Diseño de módulos.",
+                            "Diagrama de Navegabilidad (Entradas y salidas )",
+                            "Seguridad en ambientes Web"
+                        ]
+                    },
+                    "unidad6": {
+                        "titulo": "Validación y Verificación de sistemas (TESTING)",
+                        "temas": [
+                            "Planificación de Testing",
+                            "Validación del Software",
+                            "Proceso de Pruebas",
+                            "Principios de Pruebas",
+                            "Clasificación del tipo de pruebas.",
+                            "Caja blanca o de cristal",
+                            "Caja negra",
+                            "Metodologías top-down y bottom-up",
+                            "Registro de incidentes. Introducción a la automatización.",
+                            "Herramientas de prueba :",
+                            "Selenium, JMeter, Testlink",
+                            "Usabilidad",
+                            "Métodos de evaluación de la usabilidad .",
+                            "Normas ISO relativas a la usabilidad",
+                            "Comunicación y organización del contenido",
+                            "Métricas de software",
+                            "Estimación. Concepto.",
+                            "Diferentes métodos.",
+                            "Líneas de código",
+                            "Punto de función",
+                            "Herramientas CASE.",
+                            "Definición",
+                            "Clasificación de herramientas",
+                            "Utilización."
+                        ]
+                    },
+                    "unidad7": {
+                        "titulo": "Ética Profesional y Laboral en Informática",
+                        "temas": [
+                            "Códigos de Ética en Informática",
+                            "Guías de comportamiento",
+                            "Los principios de la Ética profesional"
+                        ]
+                    },
+                    "unidad8": {
+                        "titulo": "Tutoría de Proyecto de Egreso",
+                        "temas": [
+                            "Presentación de avances de Proyecto y seguimiento de los mismos",
+                            "Formatos y normas. Estandarización de documentos.",
+                            "Presentación de la Gestión de Proyectos Informáticos",
+                            "Defensa de la Gestión de Proyecto",
+                            "¿Qué es una presentación?",
+                            "¿Qué debe mostrar?",
+                            "¿Qué debo decir y que no?",
+                            "¿Qué posición debe adoptar?",
+                            "Tip’s de Oratoria y Gesticulación."
+                        ]
+                    }
+                }
+            },
+            {
+                "nombre": "Base de Datos II",
+                "programa": "doc/planes/btinformatica/BasedatosII.pdf",
+                "contenidos": {
+                    "unidad1": {
+                        "titulo": "Integración teórico-práctica",
+                        "temas": [
+                            "Conceptos generales del Modelo Conceptual",
+                            "Convenciones sobre la notación",
+                            "Desarrollo de un caso simple de uso",
+                            "Modelo Conceptual",
+                            "Modelo Entidad Relación",
+                            "Modelo relacional",
+                            "Conceptos generales (Esquema Relacional, 1FN, 2FN, 3FN)",
+                            "Restricciones",
+                            "de dominio",
+                            "de clave",
+                            "de integridad referencial",
+                            "Aplicación de las restricciones de integridad",
+                            "Fases del diseño de Bases de Datos",
+                            "Evaluación diagnóstica inicial"
+                        ]
+                    },
+                    "unidad2": {
+                        "titulo": "Introducción a las herramientas del motor en uso",
+                        "temas": [
+                            "Teoría y práctica de las operaciones",
+                            "Crear, modificar y eliminar de bases de datos",
+                            "Crear, alterar la estructura y eliminar tablas",
+                            "Crear, modificar y eliminar índices",
+                            "Aceptación de valores nulos"
+                        ]
+                    },
+                    "unidad3": {
+                        "titulo": "Administración de usuarios",
+                        "temas": [
+                            "Permisos sobre Bases de Datos",
+                            "Permisos sobre Tablas y Columnas",
+                            "Asignar y revocar permisos a usuarios en B. Datos",
+                            "Asignar y revocar permisos a usuarios en Tablas",
+                            "Asignar y revocar permisos a usuarios en Columnas"
+                        ]
+                    },
+                    "unidad4": {
+                        "titulo": "Administración e Implementación del modelo físico",
+                        "temas": [
+                            "Bases de datos en la nube",
+                            "Filtrado de IPs mediante Firewall",
+                            "Gestión de usuarios y permisos",
+                            "Backups y recuperación",
+                            "Manejo de concurrencia",
+                            "Configuración de cache en MySQL",
+                            "Configuración de encoding de tablas",
+                            "Tipos de datos",
+                            "Aplicación del DDL (Data Definition Language)",
+                            "Implementación de un caso de uso"
+                        ]
+                    },
+                    "unidad5": {
+                        "titulo": "Manejo de los datos",
+                        "temas": [
+                            "Revisión general del SQL (Structured Query Language)",
+                            "Sentencias SELECT simples",
+                            "Aplicación del DML (Data Manipulation Language)",
+                            "Sentencia Insert",
+                            "Sentencia Update",
+                            "Sentencia Delete",
+                            "Sentencia Load",
+                            "Sentencia Unload",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad6": {
+                        "titulo": "Clausulas SELECT y Funciones",
+                        "temas": [
+                            "Sentencia SELECT",
+                            "Cláusula group by",
+                            "Cláusula having",
+                            "Funciones de agregación (Contar, Sumar, Máximo, Mínimo, Promedio)",
+                            "Funciones de fecha",
+                            "Funciones de string",
+                            "Funciones adicionales",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad7": {
+                        "titulo": "Joins",
+                        "temas": [
+                            "Joins simples",
+                            "Joins complejos",
+                            "Asignar alias a tablas",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad8": {
+                        "titulo": "Subquerys",
+                        "temas": [
+                            "Subquery's",
+                            "Tablas temporales",
+                            "Operador UNION",
+                            "Prácticas sobre casos de uso de resolución compleja, involucrando sentencias SELECT que incluyan joins, subqueries, tablas temporales y uniones"
+                        ]
+                    },
+                    "unidad9": {
+                        "titulo": "Administración. Manejo y Optimización",
+                        "temas": [
+                            "Rol del Administrador de Base de Datos",
+                            "Funciones del DBA",
+                            "Arquitectura del SGDB",
+                            "Concepto de Instancia",
+                            "Definición de la seguridad",
+                            "Asegurar la integridad de los datos",
+                            "Manejo de la concurrencia",
+                            "Optimización del acceso a los datos",
+                            "Logs",
+                            "Transacciones"
+                        ]
+                    },
+                    "unidad10": {
+                        "titulo": "Vistas",
+                        "temas": [
+                            "Conceptos",
+                            "Características",
+                            "Permisos",
+                            "Ejercicios prácticos de Creación de Vistas"
+                        ]
+                    },
+                    "unidad11": {
+                        "titulo": "Respaldo y recuperación de datos y estructuras",
+                        "temas": ["Respaldo y recuperación de datos y estructuras"]
+                    },
+                    "unidad12": {
+                        "titulo": "Base de datos No Relacionales",
+                        "temas": [
+                            "Arquitectura",
+                            "Ventajas",
+                            "Desventajas",
+                            "Sistemas"
+                        ]
+                    }
+                }
+            },
+            {
+                "nombre": "Sistemas Operativos III",
+                "programa": "doc/planes/btinformatica/SistemasOperativosIII.pdf",
+                "contenidos": {
+                    "unidad1": {
+                        "titulo": "Introducción a distribuciones Linux Empresariales",
+                        "temas": [
+                            "Estándar POSIX",
+                            "Licenciamiento de Software Libre - GPL, LGPL y BSD",
+                            "Software libre con soporte empresarial",
+                            "Caso de análisis Red Hat, SUSE Linux o CentOS"
+                        ]
+                    },
+                    "unidad2": {
+                        "titulo": "Manejo avanzado de terminal",
+                        "temas": [
+                            "Archivos de entorno (profile y bash rc)",
+                            "Alias",
+                            "Gestión básica de procesos",
+                            "Variables de entorno",
+                            "Procesos en foreground y background",
+                            "Operadores “|”, “&&” y “||”",
+                            "Manejo avanzado de vim",
+                            "Líneas de archivos",
+                            "Buscar y reemplazar",
+                            "Copiar y pegar",
+                            "Cartilla de comandos"
+                        ]
+                    },
+                    "unidad3": {
+                        "titulo": "Reseña de programación de Shell Scripts",
+                        "temas": [
+                            "Sentencias condicionales",
+                            "Iteradores",
+                            "Variables",
+                            "Funciones",
+                            "Modularización de shell scripts"
+                        ]
+                    },
+                    "unidad4": {
+                        "titulo": "Administración de usuarios",
+                        "temas": [
+                            "Tipos de usuarios y grupos",
+                            "“su” y “sudo”",
+                            "Archivos /etc/passwd, /etc/shadow, /etc/skel",
+                            "Comandos involucrados en la administración de usuarios"
+                        ]
+                    },
+                    "unidad5": {
+                        "titulo": "Manejo del sistema de archivos",
+                        "temas": [
+                            "Manipulación de discos y particiones",
+                            "Montaje de dispositivos",
+                            "LVM",
+                            "Enlaces simbólicos"
+                        ]
+                    },
+                    "unidad6": {
+                        "titulo": "SSH",
+                        "temas": [
+                            "Comparativa con Telnet",
+                            "Configuración del servicio",
+                            "Manejo de keys RSA para autenticación",
+                            "Túneles SSH"
+                        ]
+                    },
+                    "unidad7": {
+                        "titulo": "Instalación de Software",
+                        "temas": [
+                            "Paquetes RPM",
+                            "Manejo de gestores de paquetes",
+                            "Administración de Repositorios",
+                            "Compilación de software con “./configure”,”make” y “make install”"
+                        ]
+                    },
+                    "unidad8": {
+                        "titulo": "Apache",
+                        "temas": [
+                            "Instalación para Linux (LAMP)",
+                            "Instalación para Windows (WAMP)",
+                            "Configurar Apache",
+                            "Configurar servicios"
+                        ]
+                    },
+                    "unidad9": {
+                        "titulo": "Gestión de servicios Systemd",
+                        "temas": [
+                            "Concepto y funcionamiento del servicio",
+                            "Administración de servicios con Systemd",
+                            "Manipulación y creación de archivos de servicios para Systemd"
+                        ]
+                    },
+                    "unidad10": {
+                        "titulo": "Auditoria del sistema",
+                        "temas": [
+                            "Servicio syslog-ng/rsyslog",
+                            "Directorio /var/log",
+                            "Configuración de logs remotos"
+                        ]
+                    },
+                    "unidad11": {
+                        "titulo": "Mecanismos de backup",
+                        "temas": [
+                            "Compresión de archivos y directorios con “tar” y “gzip”",
+                            "Espejado de directorios con “rsync”",
+                            "Copias remotas con “scp”"
+                        ]
+                    },
+                    "unidad12": {
+                        "titulo": "Programación de tareas",
+                        "temas": [
+                            "Concepto de servicio crontab",
+                            "Manejo de archivo /etc/crontab",
+                            "Manejo de directorios /etc/cron.d, /etc/cron.daily, /etc/cron.monthly, /etc/cron.weekly y /etc/cron.hourly"
+                        ]
+                    },
+                    "unidad13": {
+                        "titulo": "Contenedores",
+                        "temas": [
+                            "Concepto de contenedores con Docker",
+                            "Creacion de contenedores",
+                            "Practica con Docker"
+                        ]
+                    },
+                    "unidad14": {
+                        "titulo": "Seguridad",
+                        "temas": [
+                            "Políticas de contraseñas y cuentas de usuarios",
+                            "Políticas y manejo de permisos de archivos",
+                            "Firewall del sistema operativo con iptables",
+                            "Seguridad por Capas del Modelo OSI",
+                            "Seguridad por Protocolos",
+                            "Detección de vulnerabilidades",
+                            "Detección de intrusos"
+                        ]
+                    },
+                    "unidad15": {
+                        "titulo": "Apoyo al proyecto de pasaje de grado",
+                        "temas": []
+                    }
+                }
+            },
+            {
+                "nombre": "Programación Web",
+                "programa": "doc/planes/btinformatica/Programacionweb.pdf",
+                "contenidos": {
+                    "unidad1": {
+                        "titulo": "INTRODUCCIÓN",
+                        "temas": [
+                            "¿Qué es PHP?",
+                            "¿Qué es una aplicación web?",
+                            "Aplicaciones web y software libre",
+                            "Preparación del ambiente de trabajo"
+                        ]
+                    },
+                    "unidad2": {
+                        "titulo": "INTRODUCCIÓN AL LENGUAJE PHP",
+                        "temas": [
+                            "Sintaxis básica",
+                            "Imprimiendo una línea de texto",
+                            "Variables",
+                            "Tipos de datos",
+                            "Comentarios",
+                            "Expresiones y Operadores",
+                            "Estructuras de control",
+                            "Funciones",
+                            "Constantes"
+                        ]
+                    },
+                    "unidad3": {
+                        "titulo": "HERRAMIENTAS ELEMENTALES",
+                        "temas": [
+                            "Trabajando con arreglos",
+                            "Manejo de cadenas",
+                            "Archivos",
+                            "Inclusión de archivos"
+                        ]
+                    },
+                    "unidad4": {
+                        "titulo": "DISEÑO DE APLICACIONES WEB",
+                        "temas": [
+                            "Diseño de formularios",
+                            "Verbos (PUT, POST, GET, HEAD, DELETE)",
+                            "Códigos HTTP",
+                            "Interacción con apis públicas",
+                            "REST",
+                            "Transmisión de datos",
+                            "Formato JSON (XML)"
+                        ]
+                    },
+                    "unidad5": {
+                        "titulo": "ALGUNAS FUNCIONES ÚTILES",
+                        "temas": [
+                            "Cookies",
+                            "File-uploads",
+                            "Correo"
+                        ]
+                    },
+                    "unidad6": {
+                        "titulo": "PHP Y LA PROGRAMACIÓN ORIENTADA A OBJETOS",
+                        "temas": [
+                            "Declaración y definición de clases",
+                            "Creacion de objetos",
+                            "Métodos y atributos de un objeto",
+                            "Herencia"
+                        ]
+                    },
+                    "unidad7": {
+                        "titulo": "Control de versiones (GIT)",
+                        "temas": [
+                            "Instalación",
+                            "Comandos",
+                            "Flujos de trabajo",
+                            "Multiples entornos",
+                            "GitHub"
+                        ]
+                    },
+                    "unidad8": {
+                        "titulo": "TRABAJANDO CON BASES DE DATOS",
+                        "temas": [
+                            "El manejador de bases de datos MySQL",
+                            "Creación de bases de datos en MySQL",
+                            "Manipulación de una Base de Datos con PHP",
+                            "Consideraciones de seguridad"
+                        ]
+                    },
+                    "unidad9": {
+                        "titulo": "API",
+                        "temas": [
+                            "Realizar llamadas a APIs externas",
+                            "Leer información de form y enviarla vía POST",
+                            "Render Async (ajax)"
+                        ]
+                    }
+                }
+            },
+            {
+                "nombre": "Gestión de Proyectos Web",
+                "programa": "doc/planes/btinformatica/GestiónProyectoWeb.pdf",
+                "contenidos": null
+            },
+            {
+                "nombre": "Diseño Web",
+                "programa": null
+            },
+            {
+                "nombre": "Formación Empresarial",
+                "programa": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sistemas Operativos - Matías Prestes</title>
+
+    <!-- SEO Mejorado -->
+    <meta name="description" content="Curso de Sistemas Operativos por Matías Prestes. Aprende sobre Linux, Windows Server, virtualización y administración de sistemas.">
+    <meta name="keywords" content="sistemas operativos, Linux, Windows Server, virtualización, administración de sistemas, UTU, educación tecnológica">
+    <meta name="author" content="Matías Prestes">
+    <meta name="google-site-verification" content="fYd3qRaY3wGjk-gQiSKZOH8liDF2VUYVajxzZbvtFHo" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://profematiasprestes.misitioweb.com.uy/sistemas-operativos.html">
+    <meta property="og:title" content="Sistemas Operativos - Matías Prestes">
+    <meta property="og:description" content="Aprende sobre administración de sistemas operativos modernos, Linux, Windows Server y virtualización.">
+    <meta property="og:image" content="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sistemas Operativos - Matías Prestes">
+    <meta name="twitter:description" content="Curso completo de sistemas operativos y administración de sistemas.">
+    <meta name="twitter:image" content="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp">
+
+    <!-- Enlaces canónicos y sociales -->
+    <link rel="canonical" href="https://profematiasprestes.misitioweb.com.uy/sistemas-operativos.html">
+    <meta name="robots" content="index, follow">
+    <link rel="me" href="https://www.youtube.com/@MATIASPRESTES-jc9hz">
+    <link rel="me" href="https://uy.linkedin.com/in/mprestestecnologia">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/sistemas-operativos.css">
+
+    <!-- Performance Optimization -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logos/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/logos/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/logos/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logos/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Profe Matias" />
+    <link rel="manifest" href="img/logos/favicon/site.webmanifest" />
+
+    <!-- JSON-LD para SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Sistemas Operativos",
+            "description": "Curso de fundamentos y administración de sistemas operativos modernos",
+            "provider": {
+                "@type": "Person",
+                "name": "Matías Prestes",
+                "sameAs": [
+                    "https://www.youtube.com/@MATIASPRESTES-jc9hz",
+                    "https://uy.linkedin.com/in/mprestestecnologia"
+                ]
+            },
+            "educationalLevel": "Nivel Terciario",
+            "courseCode": "SO-2024",
+            "hasCourseInstance": {
+                "@type": "CourseInstance",
+                "courseMode": "Presencial y Online",
+                "courseWorkload": "PT4H",
+                "inLanguage": "es"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="course-main" class="course-detail-section section">
+        <div class="container course-detail-container">
+            <section id="course-overview" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Descripción del Curso</h2>
+                <p>Sumérgete en el mundo de los sistemas operativos, aprendiendo a manejar y administrar sistemas Linux, Unix y Windows Server con maestría profesional. Este curso te proporcionará una comprensión profunda de los principios fundamentales
+                    de los sistemas operativos, desde la gestión de procesos y memoria hasta la administración de usuarios y seguridad del sistema.</p>
+                <p>A través de ejemplos prácticos y estudios de caso, explorarás las características distintivas de cada sistema operativo, comprendiendo sus fortalezas y debilidades en diferentes entornos. Aprenderás a realizar tareas de administración
+                    esenciales, como la configuración de redes, la gestión de servicios y la implementación de políticas de seguridad robustas.</p>
+                <p>Ya seas un estudiante de informática, un profesional de TI en busca de mejorar tus habilidades o simplemente un entusiasta de la tecnología, este curso te brindará las herramientas y el conocimiento necesarios para desenvolverte con confianza
+                    en el mundo de los sistemas operativos.</p>
+            </section>
+
+            <section id="course-topics" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">Temas a Cubrir</h2>
+                <ul class="topics-list">
+                    <li class="topic-item">Introducción a sistemas operativos: historia, evolución y tipos.</li>
+                    <li class="topic-item">Administración de Linux y Unix: comandos básicos, gestión de usuarios y permisos, scripting shell.</li>
+                    <li class="topic-item">Configuración de Windows Server: instalación, Active Directory, políticas de grupo, servicios de red.</li>
+                    <li class="topic-item">Virtualización y contenedores: conceptos, tecnologías (VMware, Docker), administración de máquinas virtuales y contenedores.</li>
+                    <li class="topic-item">Seguridad y gestión de sistemas: hardening, firewalls, sistemas de detección de intrusos, copias de seguridad y recuperación.</li>
+                </ul>
+                <p>Además de estos temas centrales, también exploraremos:</p>
+                <ul class="topics-list">
+                    <li class="topic-item">Gestión de procesos y concurrencia.</li>
+                    <li class="topic-item">Administración de memoria y almacenamiento.</li>
+                    <li class="topic-item">Sistemas de archivos y gestión de E/S.</li>
+                    <li class="topic-item">Redes y comunicaciones en sistemas operativos.</li>
+                    <li class="topic-item">Seguridad avanzada y cumplimiento normativo.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- New sections below -->
+        <div class="container course-detail-container">
+            <section id="tipos-so" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Tipos de Sistemas Operativos</h2>
+                <p>Los sistemas operativos se clasifican en diversas categorías según su propósito, entorno de uso y diseño. Comprender estas clasificaciones es fundamental para elegir el sistema operativo adecuado para cada necesidad.</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistemas Operativos de Escritorio</h3>
+                    <p>Optimizados para la interacción del usuario final en computadoras personales. Priorizan la facilidad de uso, la compatibilidad con una amplia gama de software de usuario y la capacidad de respuesta interactiva.</p>
+                    <ul class="topics-list">
+                        <li><b>Ejemplos:</b> Windows, macOS, Linux (Ubuntu, Fedora, Debian).</li>
+                        <li><b>Características Clave:</b> Interfaz gráfica amigable (GUI), soporte para aplicaciones de productividad, multimedia y juegos, gestión de dispositivos periféricos.</li>
+                        <li>
+                            <b>Ejemplo Visual:</b>
+                            <img src="https://via.placeholder.com/400x200/42a5f5/ffffff?text=Escritorio+Windows" alt="Escritorio Windows" class="course-image">
+                            <p class="image-caption">Ejemplo de un entorno de escritorio Windows típico, mostrando la interfaz gráfica y las aplicaciones.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistemas Operativos para Servidores</h3>
+                    <p>Diseñados para operar servidores y proveer servicios a través de una red. Enfatizan la estabilidad, seguridad, eficiencia y capacidad de gestión remota.</p>
+                    <ul class="topics-list">
+                        <li><b>Ejemplos:</b> Windows Server, Linux Server (CentOS, Red Hat Enterprise Linux, Ubuntu Server), Unix (Solaris, AIX).</li>
+                        <li><b>Características Clave:</b> Robustez y alta disponibilidad, herramientas de administración de servidor, gestión de usuarios y permisos avanzada, optimización para servicios de red (web, bases de datos, correo electrónico).</li>
+                        <li>
+                            <b>Ejemplo de Uso:</b>
+                            <p>Un servidor Linux ejecutando el servidor web Apache, gestionando peticiones de usuarios y sirviendo contenido web.</p>
+                            <pre><code class="language-bash">
+                # Ejemplo de configuración de Apache en Linux
+                sudo systemctl start apache2
+                sudo systemctl enable apache2
+                sudo firewall-cmd --permanent --add-service=http
+                sudo firewall-cmd --reload
+              </code></pre>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistemas Operativos Móviles</h3>
+                    <p>Adaptados para dispositivos móviles como smartphones y tablets. Se centran en la eficiencia energética, interfaces táctiles y soporte para conectividad móvil.</p>
+                    <ul class="topics-list">
+                        <li><b>Ejemplos:</b> Android, iOS.</li>
+                        <li><b>Características Clave:</b> Interfaces de usuario táctiles, gestión de batería eficiente, conectividad inalámbrica (WiFi, Bluetooth, redes celulares), tiendas de aplicaciones (App Store, Google Play).</li>
+                        <li>
+                            <b>Ejemplo de Interacción:</b>
+                            <video controls class="course-video">
+                <source src="https://via.placeholder.com/400x300/29b6f6/ffffff?text=Video+Demo+Android" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+              </video>
+                            <p class="video-caption">Demostración de la interfaz de usuario de Android y la interacción táctil.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistemas Operativos Embebidos</h3>
+                    <p>Integrados en dispositivos específicos para controlar hardware dedicado. Requieren ser altamente eficientes en recursos y a menudo operan en tiempo real.</p>
+                    <ul class="topics-list">
+                        <li><b>Ejemplos:</b> FreeRTOS, VxWorks, Android Embedded, sistemas operativos en automóviles, electrodomésticos, dispositivos IoT.</li>
+                        <li><b>Características Clave:</b> Consumo mínimo de recursos (memoria, energía), operación en tiempo real, alta fiabilidad, personalización para hardware específico.</li>
+                        <li>
+                            <b>Ejemplo de Aplicación:</b>
+                            <p>Un sistema operativo embebido controlando un sistema de frenado ABS en un automóvil, donde la respuesta en tiempo real es crítica para la seguridad.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistemas Operativos en Tiempo Real (RTOS)</h3>
+                    <p>Diseñados para aplicaciones que requieren procesamiento y respuesta a eventos dentro de plazos estrictos. Cruciales en sistemas de control industrial, aeroespacial y médico.</p>
+                    <ul class="topics-list">
+                        <li><b>Ejemplos:</b> QNX, RTLinux, FreeRTOS (en ciertas configuraciones).</li>
+                        <li><b>Características Clave:</b> Determinismo en la respuesta a interrupciones, priorización de tareas en tiempo real, latencia mínima, gestión precisa del tiempo.</li>
+                        <li>
+                            <b>Ejemplo de Código (RTLinux):</b>
+                            <pre><code class="language-c">
+                #include <stdio.h>
+                #include <sys/time.h>
+                #include <pthread.h>
+                #include <rtdm/rtdm.h>
+                #include <rtdm/clock.h>
+
+                void *rt_task(void *arg) {
+                  RT_TASK *task;
+                  RTIME start_time;
+
+                  task = rt_task_self();
+                  printf("Tarea RT '%s' iniciada\\n", rt_task_name(task));
+
+                  start_time = rt_timer_read();
+
+                  while (1) {
+                    printf("Tarea RT '%s' ejecutándose en tiempo %llu ns\\n", rt_task_name(task), rt_timer_read() - start_time);
+                    rt_task_sleep(rt_timer_ns2ticks(100000000)); // 100ms
+                  }
+                  return NULL;
+                }
+              </code></pre>
+                            <p class="code-caption">Ejemplo básico de una tarea en tiempo real en RTLinux, mostrando la precisión en la ejecución temporal.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="componentes-so" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">Componentes Clave de un Sistema Operativo</h2>
+                <p>Un sistema operativo moderno es una compleja colección de componentes de software que trabajan en conjunto para gestionar el hardware y proveer una plataforma para las aplicaciones. Los componentes clave incluyen:</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Kernel</h3>
+                    <p>El núcleo del sistema operativo, responsable de la gestión de recursos a bajo nivel. Actúa como la interfaz principal entre el hardware y el resto del software.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones Principales:</b> Gestión de la CPU (planificación de procesos), gestión de memoria, gestión de dispositivos de E/S, llamadas al sistema (system calls).</li>
+                        <li><b>Tipos de Kernel:</b> Monolítico (Linux, Unix), Microkernel (QNX, macOS - XNU Hybrid Kernel), Híbrido.</li>
+                        <li>
+                            <b>Diagrama Esquemático:</b>
+                            <img src="https://via.placeholder.com/400x200/ffc107/000000?text=Esquema+Kernel" alt="Esquema del Kernel" class="course-image">
+                            <p class="image-caption">Representación simplificada de la posición central del Kernel entre hardware y software de usuario.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Gestor de Memoria</h3>
+                    <p>Administra la memoria del sistema, asegurando que los procesos tengan el espacio necesario para ejecutarse y evitando conflictos. Incluye gestión de memoria virtual, paginación y segmentación.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones Principales:</b> Asignación y desasignación de memoria, gestión de memoria virtual, swapping (intercambio a disco), protección de memoria entre procesos.</li>
+                        <li><b>Técnicas Comunes:</b> Paginación, segmentación, memoria virtual, algoritmos de reemplazo de páginas (FIFO, LRU, Optimal).</li>
+                        <li>
+                            <b>Ejemplo Conceptual (Paginación):</b>
+                            <pre><code class="language-text">
+                Memoria Física: [Página 1] | [Página 2] | [Página 3] | ...
+                Memoria Virtual Proceso A: [Página Virtual A1] -> [Página Física 2]
+                                         [Página Virtual A2] -> [Página Física 1]
+              </code></pre>
+                            <p class="code-caption">Esquema conceptual de la paginación, mostrando la correspondencia entre memoria virtual y física.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistema de Archivos</h3>
+                    <p>Organiza y gestiona el almacenamiento de datos en dispositivos persistentes. Define la estructura de directorios, permisos de acceso y operaciones de manipulación de archivos.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones Principales:</b> Creación, eliminación, renombrado, copia, movimiento de archivos y directorios, gestión de metadatos (fechas de creación, modificación, permisos), organización en estructuras jerárquicas (árbol de
+                            directorios).
+                        </li>
+                        <li><b>Ejemplos de Sistemas de Archivos:</b> NTFS (Windows), ext4 (Linux), APFS (macOS), FAT32 (compatibilidad).</li>
+                        <li>
+                            <b>Ejemplo de Comando (Linux - Gestión de archivos):</b>
+                            <pre><code class="language-bash">
+                # Crear un directorio
+                mkdir documentos
+
+                # Listar archivos en el directorio actual
+                ls -l
+
+                # Copiar un archivo
+                cp archivo.txt documentos/
+
+                # Eliminar un archivo
+                rm archivo_temporal.txt
+              </code></pre>
+                            <p class="code-caption">Ejemplos de comandos básicos de gestión de archivos en Linux.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Interfaz de Usuario</h3>
+                    <p>Permite la interacción entre el usuario y el sistema operativo. Puede ser gráfica (GUI) o de línea de comandos (CLI).</p>
+                    <ul class="topics-list">
+                        <li><b>Tipos de Interfaces:</b> Interfaz Gráfica de Usuario (GUI - Windows, macOS, entornos de escritorio Linux), Interfaz de Línea de Comandos (CLI - Terminal/Consola en Linux, macOS, Windows Command Prompt/PowerShell).</li>
+                        <li><b>Componentes GUI:</b> Ventanas, iconos, menús, puntero del ratón, widgets.</li>
+                        <li><b>Componentes CLI:</b> Intérprete de comandos (shell - bash, zsh, PowerShell), comandos de texto, scripting.</li>
+                        <li>
+                            <b>Comparativa GUI vs CLI:</b>
+                            <p><b>GUI:</b> Facilidad de uso, intuitiva para usuarios no técnicos, visualmente rica. Menos eficiente para tareas repetitivas y automatización.</p>
+                            <p><b>CLI:</b> Mayor eficiencia para usuarios avanzados, scripting y automatización, control preciso del sistema. Curva de aprendizaje más pronunciada.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Gestor de Procesos</h3>
+                    <p>Administra la ejecución de procesos, incluyendo la creación, finalización, planificación y sincronización de procesos. Permite la multitarea y la concurrencia.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones Principales:</b> Creación y finalización de procesos, planificación de la CPU (scheduling), gestión de prioridades, comunicación y sincronización entre procesos (IPC - Inter-Process Communication).</li>
+                        <li><b>Algoritmos de Planificación:</b> FCFS (First-Come, First-Served), SJF (Shortest Job First), Round Robin, Prioridades.</li>
+                        <li>
+                            <b>Ejemplo de Comando (Linux - Gestión de procesos):</b>
+                            <pre><code class="language-bash">
+                # Listar procesos en ejecución
+                ps aux
+
+                # Detener un proceso por ID (PID)
+                kill PID_DEL_PROCESO
+
+                # Ejecutar un programa en segundo plano
+                programa &
+
+                # Ver procesos en árbol
+                pstree
+              </code></pre>
+                            <p class="code-caption">Ejemplos de comandos para la gestión de procesos en Linux.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Controladores de Dispositivos (Drivers)</h3>
+                    <p>Software que permite al sistema operativo comunicarse y controlar dispositivos de hardware específicos. Actúan como traductores entre el SO y el hardware.</p>
+                    <ul class="topics-list">
+                        <li><b>Función Principal:</b> Abstracción de hardware, proveer una interfaz uniforme para que el SO interactúe con diversos dispositivos, manejo de interrupciones y E/S de dispositivos.</li>
+                        <li><b>Tipos de Drivers:</b> Drivers de video, drivers de sonido, drivers de red, drivers de almacenamiento, drivers de impresora, etc.</li>
+                        <li>
+                            <b>Importancia:</b> Sin drivers adecuados, el sistema operativo no podría utilizar el hardware de forma correcta. La compatibilidad de hardware depende en gran medida de la disponibilidad de drivers para un SO específico.</li>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Seguridad</h3>
+                    <p>Conjunto de mecanismos para proteger el sistema operativo y los datos contra accesos no autorizados, malware y amenazas. Incluye autenticación, autorización, firewalls y software de seguridad.</p>
+                    <ul class="topics-list">
+                        <li><b>Mecanismos de Seguridad:</b> Autenticación de usuarios (contraseñas, biometría, tokens), autorización (permisos y roles), firewalls, sistemas de detección de intrusos (IDS), software antivirus, encriptación, políticas de seguridad.</li>
+                        <li><b>Aspectos Clave:</b> Confidencialidad (proteger la información del acceso no autorizado), integridad (asegurar que los datos no sean modificados sin autorización), disponibilidad (garantizar el acceso a los recursos cuando se
+                            necesitan).
+                        </li>
+                        <li>
+                            <b>Ejemplo de Configuración (Firewall Linux - UFW):</b>
+                            <pre><code class="language-bash">
+                # Activar el firewall UFW (Uncomplicated Firewall)
+                sudo ufw enable
+
+                # Permitir tráfico entrante en el puerto 80 (HTTP)
+                sudo ufw allow 80
+
+                # Denegar todo el tráfico saliente por defecto (ejemplo de política restrictiva)
+                sudo ufw default deny outgoing
+
+                # Ver el estado del firewall
+                sudo ufw status
+              </code></pre>
+                            <p class="code-caption">Ejemplos de configuración básica de un firewall en Linux usando UFW.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="funciones-so" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Funciones Esenciales de un Sistema Operativo</h2>
+                <p>Las funciones de un sistema operativo son vitales para el funcionamiento eficiente y seguro de cualquier sistema informático. Estas funciones permiten a los usuarios y aplicaciones interactuar con el hardware de manera abstracta y gestionada.</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Gestión de Recursos</h3>
+                    <p>El sistema operativo actúa como un administrador de recursos, asignando y gestionando eficientemente los recursos del sistema entre los diferentes procesos y usuarios. Esto incluye CPU, memoria, almacenamiento y periféricos.</p>
+                    <ul class="topics-list">
+                        <li><b>Recursos Gestionados:</b> CPU (tiempo de procesamiento), memoria (RAM), almacenamiento secundario (disco duro, SSD), dispositivos de entrada/salida (teclado, ratón, impresora, red).</li>
+                        <li><b>Objetivos de la Gestión:</b> Eficiencia (maximizar el uso de recursos), equidad (distribuir los recursos de manera justa entre los usuarios y procesos), balance (evitar cuellos de botella).</li>
+                        <li>
+                            <b>Ejemplo de Gestión de CPU (Planificación):</b>
+                            <p>El sistema operativo decide qué proceso se ejecuta en la CPU en cada momento, utilizando algoritmos de planificación para optimizar el rendimiento y la respuesta del sistema.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Abstracción de Hardware</h3>
+                    <p>Proporciona una capa de abstracción que oculta la complejidad del hardware subyacente. Permite a las aplicaciones interactuar con el hardware a través de una interfaz uniforme y abstracta, independientemente de las particularidades
+                        de cada dispositivo.</p>
+                    <ul class="topics-list">
+                        <li><b>Beneficios de la Abstracción:</b> Portabilidad de aplicaciones (las aplicaciones pueden ejecutarse en diferentes hardware sin modificaciones), simplificación del desarrollo de software (los programadores no necesitan conocer
+                            los detalles del hardware), independencia del hardware (el SO puede evolucionar y soportar nuevo hardware sin afectar a las aplicaciones).</li>
+                        <li><b>Capa de Abstracción:</b> El sistema operativo provee APIs (Application Programming Interfaces) que las aplicaciones utilizan para solicitar servicios del hardware (ej. leer un archivo, enviar datos por red), sin tener que interactuar
+                            directamente con el hardware.</li>
+                        <li>
+                            <b>Analogía:</b>
+                            <p>Imagina el sistema operativo como un traductor que convierte las peticiones abstractas de las aplicaciones en instrucciones específicas para el hardware.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Ejecución de Aplicaciones</h3>
+                    <p>El sistema operativo carga, ejecuta y supervisa aplicaciones, proporcionando un entorno de ejecución controlado y seguro. Gestiona la memoria y otros recursos necesarios para cada aplicación.</p>
+                    <ul class="topics-list">
+                        <li><b>Proceso de Ejecución:</b> Carga del programa en memoria, asignación de recursos (memoria, archivos, etc.), inicio de la ejecución, gestión de la interacción con el usuario y otros procesos, finalización del programa y liberación
+                            de recursos.</li>
+                        <li><b>Entorno de Ejecución:</b> Aislamiento de procesos (cada proceso tiene su propio espacio de memoria), gestión de excepciones y errores, servicios del sistema operativo disponibles para las aplicaciones (a través de llamadas al
+                            sistema).
+                        </li>
+                        <li>
+                            <b>Ejemplo de Ciclo de Vida de una Aplicación:</b>
+                            <p>Inicio -> Carga en Memoria -> Ejecución -> Interacción con Usuario/Sistema -> Finalización.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Administración de Archivos</h3>
+                    <p>Organiza, almacena y recupera archivos y directorios, facilitando la gestión de la información. Implementa un sistema de archivos que permite a los usuarios organizar sus datos de manera lógica y persistente.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones de Administración de Archivos:</b> Creación, eliminación, renombrado, copia, movimiento de archivos y directorios, gestión de metadatos (fechas de creación, modificación, permisos), organización en estructuras jerárquicas
+                            (árbol de directorios).</li>
+                        <li><b>Operaciones Comunes:</b> Abrir, leer, escribir, cerrar archivos, buscar archivos por nombre o atributos, gestionar permisos de acceso (lectura, escritura, ejecución).</li>
+                        <li>
+                            <b>Ejemplo de Estructura de Directorios:</b>
+                            <pre><code class="language-text">
+                / (directorio raíz)
+                ├── home/
+                │   └── usuario/
+                │       ├── documentos/
+                │       │   └── trabajo.txt
+                │       └── imagenes/
+                └── var/
+                    └── log/
+              </code></pre>
+                            <p class="code-caption">Ejemplo de una estructura jerárquica de directorios típica en sistemas Unix/Linux.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Interfaz de Usuario</h3>
+                    <p>Ofrece un medio para que los usuarios interactúen con el sistema, ya sea a través de comandos de texto o interfaces gráficas. Facilita la comunicación entre el usuario y el sistema operativo.</p>
+                    <ul class="topics-list">
+                        <li><b>Tipos de Interfaz:</b> Línea de comandos (CLI), gráfica de usuario (GUI).</li>
+                        <li><b>Funciones de la Interfaz:</b> Recibir comandos del usuario, mostrar información y resultados, iniciar aplicaciones, gestionar archivos, configurar el sistema.</li>
+                        <li>
+                            <b>Ejemplo de Interacción CLI:</b>
+                            <p>Un usuario ingresando comandos en la terminal para navegar por el sistema de archivos, ejecutar programas y gestionar procesos.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Seguridad y Protección</h3>
+                    <p>Protege el sistema y los datos contra accesos no autorizados, malware y errores, garantizando la integridad y confidencialidad. Implementa mecanismos de seguridad para proteger los recursos del sistema y la información del usuario.</p>
+                    <ul class="topics-list">
+                        <li><b>Mecanismos de Seguridad:</b> Autenticación, autorización, control de acceso, firewalls, antivirus, sistemas de detección de intrusos, auditoría de seguridad.</li>
+                        <li><b>Objetivos de Seguridad:</b> Confidencialidad, integridad, disponibilidad, autenticidad, no repudio.</li>
+                        <li>
+                            <b>Ejemplo de Protección (Control de Acceso):</b>
+                            <p>El sistema operativo verifica los permisos de acceso antes de permitir a un usuario o proceso acceder a un archivo o recurso, asegurando que solo los usuarios autorizados puedan acceder a la información.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Comunicación y Red</h3>
+                    <p>Facilita la comunicación entre procesos y sistemas a través de redes, gestionando protocolos y servicios de red. Permite a los sistemas operativos participar en redes de computadoras y comunicarse con otros sistemas.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones de Red:</b> Soporte para protocolos de red (TCP/IP, UDP, HTTP, etc.), gestión de conexiones de red, servicios de red (servidor web, servidor de archivos, etc.), comunicación entre procesos en red (sockets).</li>
+                        <li><b>Servicios de Red Comunes:</b> DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), HTTP (Hypertext Transfer Protocol), SSH (Secure Shell), FTP (File Transfer Protocol).</li>
+                        <li>
+                            <b>Ejemplo de Comunicación en Red (Sockets):</b>
+                            <p>Aplicaciones que utilizan sockets para comunicarse a través de una red, permitiendo el intercambio de datos entre diferentes sistemas operativos y aplicaciones.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Contabilidad y Monitorización</h3>
+                    <p>Registra el uso de recursos y el rendimiento del sistema para optimizar su funcionamiento y detectar problemas. Permite a los administradores supervisar el sistema y optimizar su rendimiento.</p>
+                    <ul class="topics-list">
+                        <li><b>Funciones de Monitorización:</b> Registro del uso de CPU, memoria, disco, red, monitorización del rendimiento de procesos y del sistema en general, generación de logs (registros de eventos).</li>
+                        <li><b>Herramientas de Monitorización:</b> Monitores de sistema (ej. Monitor de Recursos en Windows, top/htop en Linux), herramientas de análisis de logs, sistemas de gestión de eventos e información de seguridad (SIEM).</li>
+                        <li>
+                            <b>Ejemplo de Monitorización (Linux - top):</b>
+                            <p>Utilizando el comando `top` en Linux para ver en tiempo real el uso de CPU, memoria y otros recursos por parte de los procesos en ejecución.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+        <!-- End new sections -->
+
+    </main>
+
+    <footer id="page-footer">
+        <!-- Footer Component -->
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo and Description -->
+                <div class="footer-column" data-aos="fade-up">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="w-32 mb-4">
+                    <p class="text-gray-300 mb-4">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Inicio</a>
+                        <a href="materias.html" class="footer-link">Cursos</a>
+                        <a href="materiales.html" class="footer-link">Materiales</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                        <a href="noticias.html" class="nav-link">Noticias</a>
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Política de Privacidad</a>
+                        <a href="#" class="footer-link">Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Sígueme en</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-youtube social-icon youtube"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">YouTube</div>
+                                    <div class="social-stats">+1000 Suscriptores</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-linkedin-in social-icon linkedin"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">LinkedIn</div>
+                                    <div class="social-stats">+500 Conexiones</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+        <!-- Background decoration -->
+        <div class="absolute inset-0 pointer-events-none opacity-5">
+            <div class="absolute -left-12 -top-12 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl"></div>
+            <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl"></div>
+        </div>
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" aria-label="Volver arriba">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main2.js"></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/sistemas-operativos.js"></script>
+    <!-- Scripts optimizados -->
+    <script>
+        // Función para cargar scripts de manera asíncrona
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            if (callback) {
+                script.onload = callback;
+            }
+            document.body.appendChild(script);
+        }
+
+        // Inicializar AOS después de que se cargue
+        function initAOS() {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100,
+                disable: 'mobile' // Deshabilita las animaciones en móviles para mejor rendimiento
+            });
+        }
+
+        // Cargar scripts en orden
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cargar AOS primero
+            loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js', function() {
+                initAOS();
+            });
+
+            // Cargar scripts propios
+            loadScript('js/main2.js');
+            loadScript('js/navfooter.js');
+            loadScript('js/sistemas-operativos.js');
+        });
+
+        // Optimización para el botón "Volver arriba"
+        let backToTopBtn = document.getElementById('back-to-top');
+        let scrollProgress = document.getElementById('scroll-progress');
+        let lastScrollTop = 0;
+        let ticking = false;
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    let progress = (scrollTop / scrollHeight) * 100;
+
+                    // Mostrar/ocultar botón con umbral
+                    if (scrollTop > 500) {
+                        backToTopBtn.classList.add('visible');
+                    } else {
+                        backToTopBtn.classList.remove('visible');
+                    }
+
+                    // Actualizar barra de progreso
+                    if (scrollProgress) {
+                        scrollProgress.style.width = progress + '%';
+                    }
+
+                    lastScrollTop = scrollTop;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, {
+            passive: true
+        });
+
+        // Evento click para "Volver arriba" con scroll suave
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

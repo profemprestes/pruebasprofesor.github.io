@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Avanzada - Matías Prestes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/programacion-avanzada.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="page-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link">Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link">Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header id="course-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Programación Avanzada</h1>
+                <p class="hero-subtitle">Desarrollo de aplicaciones y algoritmos complejos</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="course-main" class="course-detail-section section">
+        <div class="container course-detail-container">
+            <section id="course-overview" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-title">Descripción del Curso</h2>
+                <p>Sumérgete en el desarrollo de software de alto nivel, dominando lenguajes como Java y Python, y aprendiendo estructuras de datos avanzadas para crear soluciones de software robustas y eficientes.</p>
+            </section>
+
+            <section id="course-topics" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-title">Temas a Cubrir</h2>
+                <ul class="topics-list">
+                    <li>Programación orientada a objetos</li>
+                    <li>Java y sintaxis avanzada</li>
+                    <li>Python para scripting y análisis</li>
+                    <li>Estructuras de datos complejas</li>
+                    <li>Algoritmos de optimización</li>
+                    <li>Programación funcional</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container course-detail-container">
+            <section id="oop-section" class="topic-section" data-aos="fade-right">
+                <h2 class="section-title">Programación Orientada a Objetos (POO)</h2>
+                <p>La Programación Orientada a Objetos (POO) es un paradigma de programación fundamental en el desarrollo de software moderno. Se basa en el concepto de "objetos", que son entidades que combinan estado (datos) y comportamiento (métodos).</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Conceptos Clave de OOP</h3>
+                    <ul class="topics-list">
+                        <li><b>Clases:</b> Plantillas o planos para crear objetos. Definen las propiedades (atributos) y comportamientos (métodos) que tendrán los objetos de ese tipo.</li>
+                        <li><b>Objetos:</b> Instancias de una clase. Cada objeto tiene su propio estado y puede realizar las acciones definidas por su clase.</li>
+                        <li><b>Herencia:</b> Mecanismo que permite crear nuevas clases (subclases o clases derivadas) basadas en clases existentes (superclases o clases base). Facilita la reutilización de código y la creación de jerarquías de clases.</li>
+                        <li><b>Polimorfismo:</b> Capacidad de que objetos de diferentes clases respondan a la misma llamada de método de manera diferente. Permite escribir código más genérico y flexible.</li>
+                        <li><b>Encapsulamiento:</b> Ocultar los detalles internos de un objeto y exponer solo una interfaz para interactuar con él. Protege la integridad del estado interno del objeto y reduce la complejidad.</li>
+                        <li>
+                            <b>Diagrama UML de Clases (Ejemplo):</b>
+                            <img src="https://via.placeholder.com/400x200/9c27b0/ffffff?text=Diagrama+UML+Clases" alt="Diagrama UML Clases" class="course-image">
+                            <p class="image-caption">Ejemplo de un diagrama UML representando clases y sus relaciones.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Ejemplo de Código Java (OOP)</h3>
+                    <p>Ejemplo simple de una clase `Animal` en Java que demuestra conceptos básicos de OOP como clases, objetos, herencia y polimorfismo.</p>
+                    <pre><code class="language-java">
+            // Clase base Animal
+            class Animal {
+              private String nombre;
+
+              public Animal(String nombre) {
+                this.nombre = nombre;
+              }
+
+              public String getNombre() {
+                return nombre;
+              }
+
+              public void hacerSonido() {
+                System.out.println("Sonido genérico de animal");
+              }
+            }
+
+            // Subclase Perro que hereda de Animal
+            class Perro extends Animal {
+              public Perro(String nombre) {
+                super(nombre);
+              }
+
+              @Override
+              public void hacerSonido() {
+                System.out.println("Guau guau!");
+              }
+            }
+
+            public class Main {
+              public static void main(String[] args) {
+                Animal animalGenerico = new Animal("Animal");
+                Perro miPerro = new Perro("Buddy");
+
+                animalGenerico.hacerSonido(); // Imprime "Sonido genérico de animal"
+                miPerro.hacerSonido();        // Imprime "Guau guau!"
+
+                System.out.println(animalGenerico.getNombre()); // Imprime "Animal"
+                System.out.println(miPerro.getNombre());        // Imprime "Buddy"
+              }
+            }
+          </code></pre>
+                    <p class="code-caption">Ejemplo de código Java que ilustra la Programación Orientada a Objetos.</p>
+                </section>
+            </section>
+
+            <section id="data-structures-section" class="topic-section" data-aos="fade-left">
+                <h2 class="section-title">Estructuras de Datos Avanzadas</h2>
+                <p>Las estructuras de datos son formas especializadas de organizar y almacenar datos en una computadora para que puedan ser utilizados y procesados de manera eficiente. Las estructuras de datos avanzadas permiten manejar grandes volúmenes
+                    de datos y optimizar algoritmos para tareas complejas.</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Listas Enlazadas</h3>
+                    <p>Una lista enlazada es una secuencia de nodos, donde cada nodo contiene datos y un enlace (puntero) al siguiente nodo en la secuencia. A diferencia de los arrays, las listas enlazadas no tienen un tamaño fijo y pueden crecer o decrecer
+                        dinámicamente.
+                    </p>
+                    <ul class="topics-list">
+                        <li><b>Tipos de Listas Enlazadas:</b> Simplemente enlazadas (enlace a un nodo siguiente), doblemente enlazadas (enlace a nodo siguiente y anterior), circulares (el último nodo apunta al primero).</li>
+                        <li><b>Ventajas:</b> Inserción y eliminación eficiente de elementos en cualquier posición, tamaño dinámico.</li>
+                        <li><b>Desventajas:</b> Acceso secuencial (no se puede acceder directamente a un nodo por índice), mayor uso de memoria debido a los punteros.</li>
+                        <li>
+                            <b>Representación Visual:</b>
+                            <img src="https://via.placeholder.com/400x200/f44336/ffffff?text=Lista+Enlazada" alt="Lista Enlazada" class="course-image">
+                            <p class="image-caption">Representación gráfica de una lista enlazada.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Árboles</h3>
+                    <p>Un árbol es una estructura de datos jerárquica compuesta por nodos. El nodo superior se llama raíz, y cada nodo puede tener cero o más nodos hijos. Los árboles se utilizan para representar relaciones jerárquicas y para búsquedas eficientes.</p>
+                    <ul class="topics-list">
+                        <li><b>Tipos de Árboles:</b> Árboles binarios (cada nodo tiene como máximo dos hijos), árboles AVL y árboles rojinegros (árboles binarios de búsqueda auto-balanceados), árboles B (optimizados para acceso a disco).</li>
+                        <li><b>Aplicaciones:</b> Sistemas de archivos, índices de bases de datos, representación de jerarquías, algoritmos de búsqueda y ordenamiento.</li>
+                        <li>
+                            <b>Ejemplo de Árbol Binario:</b>
+                            <pre><code class="language-text">
+                      Raíz (10)
+                     /      \
+                 (5)        (15)
+                /   \      /   \
+             (2)    (7)  (12)   (20)
+              </code></pre>
+                            <p class="code-caption">Estructura de un árbol binario simple.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Grafos</h3>
+                    <p>Un grafo es una estructura de datos no lineal que consiste en un conjunto de nodos (vértices) y un conjunto de aristas (conexiones) que relacionan pares de nodos. Los grafos son muy versátiles y pueden representar relaciones complejas
+                        entre objetos.</p>
+                    <ul class="topics-list">
+                        <li><b>Tipos de Grafos:</b> Dirigidos (aristas con dirección), no dirigidos (aristas sin dirección), ponderados (aristas con pesos o costos), no ponderados.</li>
+                        <li><b>Aplicaciones:</b> Redes sociales, mapas y navegación, análisis de redes, algoritmos de rutas más cortas, planificación de proyectos.</li>
+                        <li>
+                            <b>Ejemplo de Grafo (Red Social):</b>
+                            <img src="https://via.placeholder.com/400x200/00bcd4/ffffff?text=Grafo+Red+Social" alt="Grafo Red Social" class="course-image">
+                            <p class="image-caption">Grafo representando conexiones en una red social.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer id="page-footer">
+        <!-- Footer Component -->
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo and Description -->
+                <div class="footer-column" data-aos="fade-up">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="w-32 mb-4">
+                    <p class="text-gray-300 mb-4">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Inicio</a>
+                        <a href="materias.html" class="footer-link">Cursos</a>
+                        <a href="materiales.html" class="footer-link">Materiales</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                        <a href="noticias.html" class="nav-link">Noticias</a>
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Política de Privacidad</a>
+                        <a href="#" class="footer-link">Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Sígueme en</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-youtube social-icon youtube"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">YouTube</div>
+                                    <div class="social-stats">+1000 Suscriptores</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-linkedin-in social-icon linkedin"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">LinkedIn</div>
+                                    <div class="social-stats">+500 Conexiones</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+        <!-- Background decoration -->
+        <div class="absolute inset-0 pointer-events-none opacity-5">
+            <div class="absolute -left-12 -top-12 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl"></div>
+            <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl"></div>
+        </div>
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" aria-label="Volver arriba">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/programacion-avanzada.js"></script>
+</body>
+
+</html>

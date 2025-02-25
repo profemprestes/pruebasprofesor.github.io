@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Novedades - Matías Prestes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="css/ingenieria-software.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/noticias.css">
+
+    <!-- Performance Optimization -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="noticias-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <i class="fas fa-newspaper hero-icon"></i>
+                <h1 class="hero-title">Noticias y Novedades</h1>
+                <p class="hero-subtitle">Mantente al día con las últimas noticias sobre tecnología, informática y educación.</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="noticias-main" class="noticias-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Noticias y Artículos</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Mantente actualizado con las últimas tendencias en tecnología y educación
+                    </p>
+                </div>
+            </div>
+
+            <div class="news-filters" data-aos="fade-up">
+                <div class="search-container">
+                    <input type="text" id="noticias-search" placeholder="Buscar noticias...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-container">
+                    <select class="category-filter" id="categoryFilter">
+            <option value="all">Todas las categorías</option>
+            <option value="db">Bases de Datos</option>
+            <option value="linux">Sistemas Linux</option>
+            <option value="web">Programación Web</option>
+            <option value="robotics">Robótica y Tecnología</option>
+          </select>
+                </div>
+            </div>
+
+            <div class="row" id="noticias-grid">
+                <!-- Artículo 1 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="db">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/web4.webp')">
+                                <span class="news-badge category-db">
+                                    <i class="fas fa-database"></i> Bases de Datos
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 15 Ene 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 12
+                                </span>
+                            </div>
+                            <h3 class="news-title">Optimización de consultas SQL avanzadas</h3>
+                            <p class="news-excerpt">Aprende técnicas profesionales para mejorar el rendimiento de tus bases de datos...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="linux">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/linux-min.jpg')">
+                                <span class="news-badge category-linux">
+                                    <i class="fab fa-linux"></i> Linux
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 20 Ene 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 8
+                                </span>
+                            </div>
+                            <h3 class="news-title">Novedades en Ubuntu 24.04 LTS</h3>
+                            <p class="news-excerpt">Descubre las mejoras de rendimiento y nuevas características del próximo LTS...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="web">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/web-min.jpg')">
+                                <span class="news-badge category-web">
+                                    <i class="fas fa-code"></i> Programación Web
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 25 Ene 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 15
+                                </span>
+                            </div>
+                            <h3 class="news-title">Nuevas tendencias en desarrollo frontend 2024</h3>
+                            <p class="news-excerpt">Descubre las herramientas y frameworks más relevantes para este año...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 4 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="robotics">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/robotica-min.jpg')">
+                                <span class="news-badge category-robotics">
+                                    <i class="fas fa-robot"></i> Robótica
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 28 Ene 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 20
+                                </span>
+                            </div>
+                            <h3 class="news-title">Competencia nacional de robótica educativa</h3>
+                            <p class="news-excerpt">Conoce los proyectos ganadores y las nuevas categorías para 2024...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 5 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="db">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/db3-min.jpg')">
+                                <span class="news-badge category-db">
+                                    <i class="fas fa-database"></i> Bases de Datos
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 30 Ene 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 10
+                                </span>
+                            </div>
+                            <h3 class="news-title">Seguridad en bases de datos relacionales</h3>
+                            <p class="news-excerpt">Mejores prácticas para proteger tu información sensible...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 6 -->
+                <div class="col-lg-6 col-xl-4" data-page="1" data-category="linux">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/linux2-min.jpg')">
+                                <span class="news-badge category-linux">
+                                    <i class="fab fa-linux"></i> Linux
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 1 Feb 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 18
+                                </span>
+                            </div>
+                            <h3 class="news-title">Guía de hardening en servidores Linux</h3>
+                            <p class="news-excerpt">Fortalece la seguridad de tus sistemas con estos pasos esenciales...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 7 - Página 2 -->
+                <div class="col-lg-6 col-xl-4" data-page="2" data-category="web" style="display: none;">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/web2-min.jpg')">
+                                <span class="news-badge category-web">
+                                    <i class="fas fa-code"></i> Programación Web
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 5 Feb 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 7
+                                </span>
+                            </div>
+                            <h3 class="news-title">Introducción a WebAssembly en proyectos educativos</h3>
+                            <p class="news-excerpt">Cómo implementar tecnología de alto rendimiento en el aula...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artículo 8 - Página 2 -->
+                <div class="col-lg-6 col-xl-4" data-page="2" data-category="robotics" style="display: none;">
+                    <article class="news-card">
+                        <div class="card-header">
+                            <div class="news-image" style="background-image: url('img/noticias/robotica2-min.jpg')">
+                                <span class="news-badge category-robotics">
+                                    <i class="fas fa-robot"></i> Robótica
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i> 8 Feb 2024
+                                </span>
+                                <span class="news-comments">
+                                    <i class="far fa-comment"></i> 14
+                                </span>
+                            </div>
+                            <h3 class="news-title">IoT en la educación técnica</h3>
+                            <p class="news-excerpt">Integrando sensores inteligentes en proyectos académicos...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-news">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Paginación -->
+            <div class="pagination-container" data-aos="fade-up">
+                <button class="pagination-btn" id="prevPage" disabled>
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <div class="page-numbers">
+                    <span class="current-page">1</span> / <span class="total-pages">2</span>
+                </div>
+                <button class="pagination-btn" id="nextPage">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="noticias-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="Imagen destacada de la noticia" class="modal-image">
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mprestes" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contacto@matiasprestes.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="materias.html" class="footer-link"><i class="fas fa-book"></i> Cursos</a>
+                            <a href="materiales.html" class="footer-link"><i class="fas fa-file-alt"></i> Materiales</a>
+                            <a href="faq.html" class="footer-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                            <a href="noticias.html" class="footer-link"><i class="fas fa-newspaper"></i> Noticias</a>
+                            <a href="contacto.html" class="footer-link"><i class="fas fa-envelope"></i> Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="politica-privacidad.html" class="footer-link"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
+                        <a href="terminos-servicio.html" class="footer-link"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-description">Suscríbete para recibir actualizaciones y recursos exclusivos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/noticias.js"></script>
+</body>
+
+</html>

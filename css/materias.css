@@ -1,0 +1,256 @@
+:root {
+    --color-primary: #3b82f6;
+    --color-secondary: #6366f1;
+    --color-text-dark: #1f2937;
+    --color-text-light: #6b7280;
+    --color-background: #f8fafc
+}
+
+#materias-hero {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: .9
+}
+
+.result-count {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0
+}
+
+.tech-categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap
+}
+
+.tech-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .75rem;
+    transition: transform .3s ease
+}
+
+.tech-category:hover {
+    transform: translateY(-10px)
+}
+
+.tech-category i {
+    font-size: 2rem;
+    margin-bottom: .5rem
+}
+
+.catalog-section {
+    background-color: var(--color-background);
+    padding: 4rem 0
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.catalog-header .section-title {
+    font-size: 2.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem
+}
+
+.catalog-header .section-description {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem
+}
+
+.materias-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap
+}
+
+.filter-btn {
+    padding: .75rem 1.5rem;
+    border: 2px solid transparent;
+    background: rgba(59, 130, 246, .1);
+    color: var(--color-text-dark);
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    position: relative;
+    overflow: hidden
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(59, 130, 246, .2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s ease, height .3s ease;
+    z-index: -1
+}
+
+.filter-btn:hover::before {
+    width: 200%;
+    height: 200%
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px)
+}
+
+.filter-btn.active {
+    background: var(--color-primary);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, .2)
+}
+
+.materias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    perspective: 1000px
+}
+
+.materia-card {
+    transition: all .3s ease;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.materia-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .2)
+}
+
+.materia-icon {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem
+}
+
+.materia-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+    color: var(--color-text-dark)
+}
+
+.materia-description {
+    color: var(--color-text-light);
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem
+}
+
+.materia-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: rgba(59, 130, 246, .05);
+    align-self: flex-start;
+    margin: 1rem 1.5rem 1.5rem
+}
+
+.materia-link:hover {
+    color: var(--color-secondary);
+    transform: translateX(5px);
+    background-color: rgba(59, 130, 246, .1)
+}
+
+.materia-link i {
+    transition: transform .3s ease
+}
+
+.materia-link:hover i {
+    transform: translateX(3px)
+}
+
+@media (max-width:768px) {
+    .hero-title {
+        font-size: 2rem
+    }
+    .tech-categories {
+        gap: 1rem
+    }
+    .tech-category i {
+        font-size: 1.5rem
+    }
+    .materias-filter {
+        flex-direction: column;
+        align-items: center
+    }
+    .filter-btn {
+        margin-bottom: .5rem
+    }
+    .materia-card {
+        padding: 1.5rem
+    }
+    .materia-icon {
+        font-size: 2.5rem;
+        padding: 1rem
+    }
+    .materia-title {
+        font-size: 1.3rem;
+        margin: 1rem 0 .8rem 0
+    }
+    .materia-description {
+        font-size: .95rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem
+    }
+    .materia-link {
+        font-size: .9rem;
+        padding: .6rem 1rem;
+        margin: .8rem 1rem 1rem
+    }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1: Integración teórico-práctica - Base de Datos II</title>
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="stylesheet" href="../../../css/bases-datos.css">
+    <link rel="stylesheet" href="../../../css/navfooter.css">
+    <link rel="stylesheet" href="../../../css/unidadesdetalles.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="course-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Unidad 1: Integración teórico-práctica</h1>
+                <p class="hero-subtitle">Base de Datos II</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="course-main" class="course-detail-section section">
+        <div class="container">
+            <section id="course-overview" class="course-section" data-aos="fade-up">
+                <h2 class="section-title">Sistemas de Bases de Datos II</h2>
+                <div class="course-intro">
+                    <p class="lead-text">Curso avanzado de bases de datos que abarca desde el diseño conceptual hasta la implementación y administración de sistemas de bases de datos relacionales y no relacionales.</p>
+                </div>
+            </section>
+
+            <!-- Barra de navegación de la unidad -->
+            <nav class="unit-nav">
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#teoria">Teoría</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#casos-practicos">Casos Prácticos</a></li>
+                    <li><a href="#ejercicios">Ejercicios</a></li>
+                    <li><a href="#evaluacion">Evaluación</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contenido principal -->
+            <div class="container">
+                <!-- Sección de Introducción -->
+                <section id="introduccion" class="content-section" data-aos="fade-up">
+                    <h2 class="section-title">Introducción</h2>
+                    <p class="lead-text">
+                        En esta unidad exploraremos los fundamentos esenciales del diseño de bases de datos, desde la conceptualización inicial hasta la implementación de modelos de datos robustos y eficientes.
+                    </p>
+                    <div class="objectives-card">
+                        <h3><i class="fas fa-bullseye"></i> Objetivos de Aprendizaje</h3>
+                        <ul class="objectives-list">
+                            <li><i class="fas fa-check-circle"></i> Comprender los conceptos fundamentales del modelado de datos</li>
+                            <li><i class="fas fa-check-circle"></i> Aprender a diseñar modelos conceptuales y lógicos</li>
+                            <li><i class="fas fa-check-circle"></i> Dominar las técnicas de normalización</li>
+                            <li><i class="fas fa-check-circle"></i> Aplicar restricciones de integridad en el diseño de bases de datos</li>
+                        </ul>
+                        <div class="timeline-container">
+                            <h4><i class="fas fa-clock"></i> Tiempo Estimado</h4>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="time">2h</span>
+                                    <span class="activity">Teoría</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="time">1.5h</span>
+                                    <span class="activity">Práctica</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="time">30m</span>
+                                    <span class="activity">Evaluación</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Teoría -->
+                <section id="teoria" class="content-section" data-aos="fade-up">
+                    <h2 class="section-title">Teoría</h2>
+
+                    <!-- Modelo Conceptual -->
+                    <article class="theory-card">
+                        <div class="card-header">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Modelo Conceptual</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="theory-text">
+                                El modelo conceptual es la primera etapa en el diseño de una base de datos. Representa una visión abstracta de la realidad que nos permite identificar entidades, atributos y relaciones clave del sistema.
+                            </p>
+                            <div class="concept-diagram">
+                                <img src="../../../img/bdii/modelo-conceptual.png" alt="Diagrama de Modelo Conceptual">
+                                <div class="diagram-caption">
+                                    Ejemplo de un modelo conceptual para un sistema de biblioteca
+                                </div>
+                            </div>
+                            <div class="key-points">
+                                <h4><i class="fas fa-key"></i> Puntos Clave</h4>
+                                <ul>
+                                    <li>Identificación de entidades</li>
+                                    <li>Definición de atributos</li>
+                                    <li>Establecimiento de relaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Modelo Entidad Relación -->
+                    <article class="theory-card">
+                        <div class="card-header">
+                            <i class="fas fa-sitemap"></i>
+                            <h3>Modelo Entidad Relación</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="theory-text">
+                                El modelo entidad-relación (E-R) es una herramienta fundamental que nos permite representar gráficamente la estructura lógica de una base de datos.
+                            </p>
+                            <div class="concept-diagram interactive-diagram">
+                                <img src="../../../img/bdii/modelo-er.png" alt="Diagrama Entidad Relación">
+                                <div class="diagram-overlay">
+                                    <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Normalización -->
+                    <article class="theory-card">
+                        <div class="card-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Normalización y Formas Normales</h3>
+                        </div>
+                        <div class="normalization-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h4>Primera Forma Normal (1FN)</h4>
+                                <p>Eliminar grupos repetitivos y garantizar valores atómicos</p>
+                                <div class="example-box">
+                                    <h5>Ejemplo:</h5>
+                                    <div class="code-block">
+                                        <pre><code>/* Antes de 1FN */
+Clientes(ID, Nombre, Teléfonos)
+/* Después de 1FN */
+Clientes(ID, Nombre)
+Teléfonos(ClienteID, Teléfono)</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Similares bloques para 2FN y 3FN -->
+                        </div>
+                    </article>
+
+                    <!-- Agregar después de la sección de Normalización -->
+                    <article class="theory-card">
+                        <div class="card-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Fases del Diseño de Bases de Datos</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="phases-container">
+                                <div class="phase-item">
+                                    <div class="phase-number">1</div>
+                                    <h4>Análisis de Requisitos</h4>
+                                    <p>Recopilación y documentación de las necesidades del usuario y del sistema</p>
+                                </div>
+                                <div class="phase-item">
+                                    <div class="phase-number">2</div>
+                                    <h4>Diseño Conceptual</h4>
+                                    <p>Creación del modelo E-R y definición de entidades y relaciones</p>
+                                </div>
+                                <div class="phase-item">
+                                    <div class="phase-number">3</div>
+                                    <h4>Diseño Lógico</h4>
+                                    <p>Transformación del modelo conceptual al modelo relacional</p>
+                                </div>
+                                <div class="phase-item">
+                                    <div class="phase-number">4</div>
+                                    <h4>Diseño Físico</h4>
+                                    <p>Implementación en un SGBD específico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="important-note">
+                        <div class="note-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="note-content">
+                            <h4>Nota importante</h4>
+                            <p>La correcta aplicación de las formas normales es crucial para evitar anomalías en la base de datos y garantizar la integridad de los datos.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Ejemplos -->
+                <section id="ejemplos" class="content-section" data-aos="fade-up">
+                    <h2>Ejemplos</h2>
+                    <div class="example-container">
+                        <div class="example-card">
+                            <h3>Sistema de Gestión de Biblioteca</h3>
+                            <div class="example-content">
+                                <div class="example-item">
+                                    <h4>Modelo Conceptual </h4>
+                                    <img src="../../../img/bdii/modelo-conceptual.png" alt="Diagrama de Modelo Conceptual">
+                                </div>
+                                <div class="example-item">
+                                    <h4>Modelo Entidad Relación</h4>
+                                    <img src="../../../img/bdii/modelo-er.png" alt="Diagrama Entidad Relación">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agregar después de la sección de Ejemplos -->
+                    <div class="interactive-example">
+                        <h3>Ejemplo Interactivo: Sistema de Biblioteca</h3>
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="conceptual">Modelo Conceptual</button>
+                            <button class="tab-btn" data-tab="logico">Modelo Lógico</button>
+                            <button class="tab-btn" data-tab="fisico">Modelo Físico</button>
+                        </div>
+                        <div class="tab-content">
+                            <div id="conceptual" class="tab-pane active">
+                                <!-- Contenido del modelo conceptual -->
+                            </div>
+                            <div id="logico" class="tab-pane">
+                                <!-- Contenido del modelo lógico -->
+                            </div>
+                            <div id="fisico" class="tab-pane">
+                                <!-- Contenido del modelo físico -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Casos Prácticos -->
+                <section id="casos-practicos" class="content-section" data-aos="fade-up">
+                    <h2>Casos Prácticos</h2>
+                    <div class="case-study">
+                        <h3>Caso: Sistema de Gestión de Ventas</h3>
+                        <!-- Aquí irá el desarrollo del caso práctico -->
+                    </div>
+                </section>
+
+                <!-- Sección de Ejercicios -->
+                <section id="ejercicios" class="content-section" data-aos="fade-up">
+                    <h2>Ejercicios</h2>
+                    <div class="exercise-container">
+                        <!-- Los ejercicios se cargarán dinámicamente con JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Sección de Evaluación -->
+                <section id="evaluacion" class="content-section" data-aos="fade-up">
+                    <h2>Evaluación Diagnóstica</h2>
+                    <div class="quiz-container">
+                        <form id="quiz-form">
+                            <!-- El cuestionario se cargará dinámicamente con JavaScript -->
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mprestes" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contacto@matiasprestes.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="materias.html" class="footer-link"><i class="fas fa-book"></i> Cursos</a>
+                            <a href="materiales.html" class="footer-link"><i class="fas fa-file-alt"></i> Materiales</a>
+                            <a href="faq.html" class="footer-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                            <a href="noticias.html" class="footer-link"><i class="fas fa-newspaper"></i> Noticias</a>
+                            <a href="contacto.html" class="footer-link"><i class="fas fa-envelope"></i> Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="politica-privacidad.html" class="footer-link"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
+                        <a href="terminos-servicio.html" class="footer-link"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-description">Suscríbete para recibir actualizaciones y recursos exclusivos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/navfooter.js" defer></script>
+    <script src="../../../js/bases-datos.js"></script>
+    <script src="../../../js/unidad1.js"></script>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>

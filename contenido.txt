@@ -1,0 +1,142 @@
+ {
+                "nombre": "Base de Datos II",
+                "programa": "doc/planes/btinformatica/BasedatosII.pdf",
+                "contenidos": {
+                    "unidad1": {
+                        "titulo": "Integración teórico-práctica",
+                        "temas": [
+                            "Conceptos generales del Modelo Conceptual",
+                            "Convenciones sobre la notación",
+                            "Desarrollo de un caso simple de uso",
+                            "Modelo Conceptual",
+                            "Modelo Entidad Relación",
+                            "Modelo relacional",
+                            "Conceptos generales (Esquema Relacional, 1FN, 2FN, 3FN)",
+                            "Restricciones",
+                            "de dominio",
+                            "de clave",
+                            "de integridad referencial",
+                            "Aplicación de las restricciones de integridad",
+                            "Fases del diseño de Bases de Datos",
+                            "Evaluación diagnóstica inicial"
+                        ]
+                    },
+                    "unidad2": {
+                        "titulo": "Introducción a las herramientas del motor en uso",
+                        "temas": [
+                            "Teoría y práctica de las operaciones",
+                            "Crear, modificar y eliminar de bases de datos",
+                            "Crear, alterar la estructura y eliminar tablas",
+                            "Crear, modificar y eliminar índices",
+                            "Aceptación de valores nulos"
+                        ]
+                    },
+                    "unidad3": {
+                        "titulo": "Administración de usuarios",
+                        "temas": [
+                            "Permisos sobre Bases de Datos",
+                            "Permisos sobre Tablas y Columnas",
+                            "Asignar y revocar permisos a usuarios en B. Datos",
+                            "Asignar y revocar permisos a usuarios en Tablas",
+                            "Asignar y revocar permisos a usuarios en Columnas"
+                        ]
+                    },
+                    "unidad4": {
+                        "titulo": "Administración e Implementación del modelo físico",
+                        "temas": [
+                            "Bases de datos en la nube",
+                            "Filtrado de IPs mediante Firewall",
+                            "Gestión de usuarios y permisos",
+                            "Backups y recuperación",
+                            "Manejo de concurrencia",
+                            "Configuración de cache en MySQL",
+                            "Configuración de encoding de tablas",
+                            "Tipos de datos",
+                            "Aplicación del DDL (Data Definition Language)",
+                            "Implementación de un caso de uso"
+                        ]
+                    },
+                    "unidad5": {
+                        "titulo": "Manejo de los datos",
+                        "temas": [
+                            "Revisión general del SQL (Structured Query Language)",
+                            "Sentencias SELECT simples",
+                            "Aplicación del DML (Data Manipulation Language)",
+                            "Sentencia Insert",
+                            "Sentencia Update",
+                            "Sentencia Delete",
+                            "Sentencia Load",
+                            "Sentencia Unload",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad6": {
+                        "titulo": "Clausulas SELECT y Funciones",
+                        "temas": [
+                            "Sentencia SELECT",
+                            "Cláusula group by",
+                            "Cláusula having",
+                            "Funciones de agregación (Contar, Sumar, Máximo, Mínimo, Promedio)",
+                            "Funciones de fecha",
+                            "Funciones de string",
+                            "Funciones adicionales",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad7": {
+                        "titulo": "Joins",
+                        "temas": [
+                            "Joins simples",
+                            "Joins complejos",
+                            "Asignar alias a tablas",
+                            "Práctica sobre casos de uso"
+                        ]
+                    },
+                    "unidad8": {
+                        "titulo": "Subquerys",
+                        "temas": [
+                            "Subquery's",
+                            "Tablas temporales",
+                            "Operador UNION",
+                            "Prácticas sobre casos de uso de resolución compleja, involucrando sentencias SELECT que incluyan joins, subqueries, tablas temporales y uniones"
+                        ]
+                    },
+                    "unidad9": {
+                        "titulo": "Administración. Manejo y Optimización",
+                        "temas": [
+                            "Rol del Administrador de Base de Datos",
+                            "Funciones del DBA",
+                            "Arquitectura del SGDB",
+                            "Concepto de Instancia",
+                            "Definición de la seguridad",
+                            "Asegurar la integridad de los datos",
+                            "Manejo de la concurrencia",
+                            "Optimización del acceso a los datos",
+                            "Logs",
+                            "Transacciones"
+                        ]
+                    },
+                    "unidad10": {
+                        "titulo": "Vistas",
+                        "temas": [
+                            "Conceptos",
+                            "Características",
+                            "Permisos",
+                            "Ejercicios prácticos de Creación de Vistas"
+                        ]
+                    },
+                    "unidad11": {
+                        "titulo": "Respaldo y recuperación de datos y estructuras",
+                        "temas": []
+                    },
+                    "unidad12": {
+                        "titulo": "Base de datos No Relacionales",
+                        "temas": [
+                            "Arquitectura",
+                            "Ventajas",
+                            "Desventajas",
+                            "Sistemas"
+                        ]
+                    }
+                }
+            },

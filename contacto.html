@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Matías Prestes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="css/stylesi.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+
+
+    <!-- Performance Optimization -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO and Accessibility Improvements -->
+    <meta name="description" content="Contacto con Matías Prestes - Profesor de Tecnología e Informática">
+    <meta name="keywords" content="contacto, matías prestes, profesor, tecnología, informática">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="contacto-hero" class="hero-section">
+        <div class="hero-content container">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">¡Conectemos!</h1>
+                <p class="hero-subtitle">Consultas en tecnología educativa - Tu transformación digital comienza aquí</p>
+                <a href="#contact-section" class="cta-button">
+          Contáctame
+          <i class="fas fa-paper-plane"></i>
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="sobre-mi" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Sobre mí</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Conoce mi trayectoria y pasión por la educación tecnológica
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="profile-image-container" data-aos="fade-right">
+                        <div class="profile-image-wrapper">
+                            <img src="img/img/FotoPerfilMatias.webp" alt="Matías Prestes" class="img-fluid rounded-circle profile-photo" title="Matías Prestes - Profesor de Informática" loading="lazy">
+                        </div>
+                        <div class="social-links mt-4" data-aos="fade-up">
+                            <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/tu_usuario" target="_blank" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/tu_usuario" target="_blank" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="about-content" data-aos="fade-left">
+                        <p class="lead mb-4">
+                            Como profesor de Informática en UTU y Secundaria, me dedico a inspirar a la próxima generación de profesionales tecnológicos. Mi experiencia abarca más de una década en la enseñanza de programación, bases de datos y robótica.
+                        </p>
+                        <p class="mb-4">
+                            Mi compromiso con la innovación educativa me impulsa a mantenerme actualizado con las últimas tendencias tecnológicas, implementando metodologías modernas que preparan a mis estudiantes para los desafíos del futuro digital.
+                        </p>
+
+                        <div class="skills-container">
+                            <!-- Habilidades actualizadas -->
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="skill-header">
+                                    <i class="fas fa-database"></i>
+                                    <span>Bases de datos y SQL</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="skill-header">
+                                    <i class="fas fa-code"></i>
+                                    <span>Programación</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="skill-header">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Robótica y educación tecnológica</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="skill-header">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span>Capacitación y docencia</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-hero">
+            <div class="contact-hero-overlay"></div>
+            <div class="container">
+                <div class="contact-hero-content" data-aos="fade-up">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-8 text-center text-md-start">
+                            <h1 class="section-title display-4 fw-bold mb-3">
+                                <span class="highlight-word">Transformemos</span> juntos la educación tecnológica
+                            </h1>
+                            <div class="d-inline-block position-relative">
+                                <p class="section-subtitle lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="fas fa-rocket me-2"></i> ¿Preparado para impulsar tus habilidades al <span class="underline-effect">siguiente nivel</span>?
+                                </p>
+                                <div class="animated-border"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="platforms-card p-4 rounded-4">
+                                <h3 class="mb-3">Conectemos en:</h3>
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <a href="#email-section" class="btn btn-lg btn-primary rounded-pill px-4">
+                                        <i class="fas fa-envelope me-2"></i>Email
+                                    </a>
+                                    <a href="#social-section" class="btn btn-lg btn-danger rounded-pill px-4">
+                                        <i class="fas fa-share-alt me-2"></i>Redes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Contact Cards -->
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <!-- Email Card -->
+                        <div class="col-md-6" data-aos="zoom-in">
+                            <div class="contact-card h-100">
+                                <div class="contact-icon bg-primary">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <h3>Correo Electrónico</h3>
+                                <p class="mb-4">Para consultas profesionales y colaboraciones:</p>
+                                <a href="mailto:contacto@matiasprestes.com" class="btn btn-outline-primary">
+                                    contacto@matiasprestes.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Card -->
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="contact-card h-100">
+                                <div class="contact-icon bg-danger">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Redes Sociales</h3>
+                                <p class="mb-4">Sigue mi contenido educativo:</p>
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="social-btn youtube" data-aos="flip-left" data-aos-delay="200">
+                                        <i class="fab fa-youtube"></i> YouTube
+                                    </a>
+                                    <a href="https://uy.linkedin.com/in/mprestestecnologia" class="social-btn linkedin" data-aos="flip-left" data-aos-delay="300">
+                                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                                    </a>
+                                    <a href="https://twitter.com/tu_usuario" class="social-btn twitter" data-aos="flip-left" data-aos-delay="400">
+                                        <i class="fab fa-twitter"></i> Twitter
+                                    </a>
+                                    <a href="https://www.facebook.com/tu_usuario" class="social-btn facebook" data-aos="flip-left" data-aos-delay="500">
+                                        <i class="fab fa-facebook-f"></i> Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="col-12" data-aos="fade-up">
+                            <div class="contact-card">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <img src="img/img/FotoPerfilMatias.webp" alt="Matías Prestes enseñando" class="img-fluid rounded-circle teaching-photo" loading="lazy" data-aos="fade-right">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="contact-icon bg-success">
+                                            <i class="fas fa-map-marked-alt"></i>
+                                        </div>
+                                        <h3>Ubicación y Horarios</h3>
+                                        <p class="lead">Disponible para consultorías en Montevideo, Uruguay</p>
+                                        <div class="schedule">
+                                            <p><strong>Horario de atención:</strong><br> Lunes a Viernes: 9:00 - 18:00 hs<br> Clases virtuales: Flexibilidad horaria</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="col-12 mt-5" data-aos="fade-up">
+                    <h2 class="section-title">Zonas de Cobertura</h2>
+                    <p class="section-subtitle">Aquí puedes ver las áreas donde ofrezco mis servicios de consultoría y clases. Estoy disponible para ayudarte en Montevideo y Canelones, adaptando mis horarios a tus necesidades educativas.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-map enhanced-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209628.32842213483!2d-56.2275814!3d-34.819962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x686fbde87255a664!2sDepartamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1740090876118!5m2!1ses!2suy"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="map-overlay" data-aos="fade-left">
+                                    <h4 class="overlay-title">Zona de cobertura: Montevideo</h4>
+                                    <p>Ofrezco consultorías y clases en la ciudad de Montevideo, adaptadas a tus necesidades educativas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-map enhanced-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420669.10651206656!2d-56.273058350594845!3d-34.54146624412438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f92101c71f8b1%3A0x7a4285f1214241ca!2sDepartamento%20de%20Canelones!5e0!3m2!1ses!2suy!4v1740090994499!5m2!1ses!2suy"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="map-overlay" data-aos="fade-left">
+                                    <h4 class="overlay-title">Zona de cobertura: Canelones</h4>
+                                    <p>También ofrezco servicios en Canelones, con horarios flexibles para adaptarme a tus requerimientos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mprestes" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contacto@matiasprestes.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="materias.html" class="footer-link"><i class="fas fa-book"></i> Cursos</a>
+                            <a href="materiales.html" class="footer-link"><i class="fas fa-file-alt"></i> Materiales</a>
+                            <a href="faq.html" class="footer-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                            <a href="noticias.html" class="footer-link"><i class="fas fa-newspaper"></i> Noticias</a>
+                            <a href="contacto.html" class="footer-link"><i class="fas fa-envelope"></i> Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="politica-privacidad.html" class="footer-link"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
+                        <a href="terminos-servicio.html" class="footer-link"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-description">Suscríbete para recibir actualizaciones y recursos exclusivos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería de Software - Matías Prestes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/ingenieria-software.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header id="course-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Programación Avanzada</h1>
+                <p class="hero-subtitle">Desarrollo de aplicaciones y algoritmos complejos</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="course-main" class="course-detail-section section">
+        <div class="container course-detail-container">
+            <section id="course-overview" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Descripción del Curso</h2>
+                <p>Desarrolla habilidades profesionales en ingeniería de software. Aprende metodologías ágiles, control de versiones y técnicas de testing para crear software de alta calidad y trabajar efectivamente en equipos de desarrollo.</p>
+            </section>
+
+            <section id="course-topics" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">Temas a Cubrir</h2>
+                <ul class="topics-list">
+                    <li>Metodologías Ágiles y Scrum</li>
+                    <li>Control de Versiones con Git</li>
+                    <li>Testing y Aseguramiento de Calidad</li>
+                    <li>Arquitectura de Software</li>
+                    <li>Patrones de Diseño</li>
+                    <li>DevOps y CI/CD</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container course-detail-container">
+            <section id="agile-section" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Metodologías Ágiles</h2>
+                <p>Las metodologías ágiles son enfoques iterativos e incrementales para la gestión de proyectos de software que priorizan la flexibilidad, la colaboración y la entrega continua de valor.</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Framework Scrum</h3>
+                    <ul class="topics-list">
+                        <li><b>Roles:</b> Scrum Master, Product Owner, Development Team</li>
+                        <li><b>Eventos:</b> Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective</li>
+                        <li><b>Artefactos:</b> Product Backlog, Sprint Backlog, Incremento</li>
+                        <li>
+                            <b>Diagrama de Scrum:</b>
+                            <img src="img/scrum-diagram.webp" alt="Diagrama de Scrum" class="course-image">
+                            <p class="image-caption">Ciclo de vida de Scrum y sus componentes principales.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Sistema Kanban</h3>
+                    <p>Kanban es un método visual para gestionar el trabajo que enfatiza la entrega continua sin sobrecargar al equipo.</p>
+                    <div class="kanban-board">
+                        <div class="kanban-column">
+                            <h4>To Do</h4>
+                            <div class="kanban-item">Task 1</div>
+                            <div class="kanban-item">Task 2</div>
+                        </div>
+                        <div class="kanban-column">
+                            <h4>In Progress</h4>
+                            <div class="kanban-item">Task 3</div>
+                        </div>
+                        <div class="kanban-column">
+                            <h4>Done</h4>
+                            <div class="kanban-item">Task 4</div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="git-section" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">Control de Versiones con Git</h2>
+                <p>Git es un sistema de control de versiones distribuido que permite a los equipos colaborar eficientemente en el desarrollo de software.</p>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Conceptos Fundamentales</h3>
+                    <ul class="topics-list">
+                        <li><b>Repositorios:</b> Local y remoto</li>
+                        <li><b>Commits:</b> Guardado de cambios con mensajes descriptivos</li>
+                        <li><b>Branches:</b> Desarrollo paralelo de características</li>
+                        <li><b>Merging:</b> Integración de cambios entre ramas</li>
+                    </ul>
+                </section>
+
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Comandos Básicos de Git</h3>
+                    <pre><code class="language-bash">
+# Iniciar repositorio
+git init
+
+# Añadir cambios
+git add .
+git commit -m "mensaje"
+
+# Trabajar con ramas
+git branch feature
+git checkout feature
+git merge feature
+                    </code></pre>
+                    <p class="code-caption">Comandos comunes de Git para el control de versiones.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link">Inicio</a>
+                            <a href="materias.html" class="footer-link">Cursos</a>
+                            <a href="materiales.html" class="footer-link">Materiales</a>
+                            <a href="faq.html" class="footer-link">FAQ</a>
+                            <a href="noticias.html" class="footer-link">Noticias</a>
+                            <a href="contacto.html" class="footer-link">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Política de Privacidad</a>
+                        <a href="#" class="footer-link">Términos de Servicio</a>
+                    </div>
+                </div>
+                <!-- Sígueme en -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Sígueme en</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-youtube social-icon youtube"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">YouTube</div>
+                                    <div class="social-stats">+1000 Suscriptores</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-linkedin-in social-icon linkedin"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">LinkedIn</div>
+                                    <div class="social-stats">+500 Conexiones</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/ingenieria-software.js"></script>
+</body>
+
+</html>

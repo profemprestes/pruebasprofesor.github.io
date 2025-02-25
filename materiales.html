@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales - Matías Prestes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/materiales.css">
+
+    <!-- Performance Optimization -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- SEO and Accessibility Improvements -->
+    <meta name="description" content="Materiales de estudio para cursos de tecnología e informática con Matías Prestes">
+    <meta name="keywords" content="materiales, tecnología, informática, programación, cursos, recursos educativos">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="materiales-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Materiales de Estudio</h1>
+                <p class="hero-subtitle">Recursos educativos de alta calidad para potenciar tu aprendizaje tecnológico</p>
+            </div>
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                <a href="#recursos" class="btn-explore">
+          Explorar Materiales
+          <i class="fas fa-arrow-down"></i>
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <main id="recursos" class="recursos-section">
+        <div class="container">
+            <header class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestros Recursos</h2>
+                <p class="section-description">Materiales diseñados para facilitar tu aprendizaje en diferentes formatos</p>
+            </header>
+
+            <nav class="recursos-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="pdf">PDFs</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+                <button class="filter-btn" data-filter="notebook">Notebooks</button>
+                <button class="filter-btn" data-filter="presentacion">Presentaciones</button>
+            </nav>
+
+            <div class="recursos-grid">
+                <!-- PDF Resources -->
+                <article class="recurso-card" data-category="pdf">
+                    <div class="recurso-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3 class="recurso-title">Guías de Programación</h3>
+                    <p class="recurso-description">Documentos PDF con explicaciones detalladas</p>
+                    <a href="#" class="recurso-btn">Descargar</a>
+                </article>
+
+                <article class="recurso-card" data-category="pdf">
+                    <div class="recurso-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="recurso-title">Apuntes de Bases de Datos</h3>
+                    <p class="recurso-description">Compendios de SQL y modelado de datos</p>
+                    <a href="#" class="recurso-btn">Descargar</a>
+                </article>
+
+                <!-- Video Resources -->
+                <article class="recurso-card" data-category="video">
+                    <div class="recurso-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="recurso-title">Tutoriales Web</h3>
+                    <p class="recurso-description">Videos paso a paso de desarrollo web</p>
+                    <a href="#" class="recurso-btn">Ver Videos</a>
+                </article>
+
+                <article class="recurso-card" data-category="video">
+                    <div class="recurso-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="recurso-title">Robótica en Acción</h3>
+                    <p class="recurso-description">Tutoriales prácticos de robótica</p>
+                    <a href="#" class="recurso-btn">Ver Videos</a>
+                </article>
+
+                <!-- Notebook Resources -->
+                <article class="recurso-card" data-category="notebook">
+                    <div class="recurso-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="recurso-title">Jupyter Notebooks</h3>
+                    <p class="recurso-description">Cuadernos interactivos de programación</p>
+                    <a href="#" class="recurso-btn">Abrir</a>
+                </article>
+
+                <!-- Presentaciones -->
+                <article class="recurso-card" data-category="presentacion">
+                    <div class="recurso-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="recurso-title">Slides de Curso</h3>
+                    <p class="recurso-description">Presentaciones de conceptos clave</p>
+                    <a href="#" class="recurso-btn">Descargar</a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mprestes" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contacto@matiasprestes.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="materias.html" class="footer-link"><i class="fas fa-book"></i> Cursos</a>
+                            <a href="materiales.html" class="footer-link"><i class="fas fa-file-alt"></i> Materiales</a>
+                            <a href="faq.html" class="footer-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                            <a href="noticias.html" class="footer-link"><i class="fas fa-newspaper"></i> Noticias</a>
+                            <a href="contacto.html" class="footer-link"><i class="fas fa-envelope"></i> Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="politica-privacidad.html" class="footer-link"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
+                        <a href="terminos-servicio.html" class="footer-link"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-description">Suscríbete para recibir actualizaciones y recursos exclusivos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/materiales.js" defer></script>
+</body>
+
+</html>

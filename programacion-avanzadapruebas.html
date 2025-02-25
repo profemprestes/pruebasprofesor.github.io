@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Avanzada - Matías Prestes</title>
+    <link rel="stylesheet" href="css/stylesi.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="page-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link">Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link">Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link">Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header id="course-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Programación Avanzada</h1>
+                <p class="hero-subtitle">Desarrollo de aplicaciones y algoritmos complejos</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="course-main" class="course-detail-section section">
+        <div class="container course-detail-container">
+            <section id="course-overview" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">Descripción del Curso</h2>
+                <p>Curso avanzado de desarrollo web con PHP, enfocado en la creación de aplicaciones web modernas, interacción con bases de datos y APIs. Aprenderás desde los fundamentos hasta técnicas avanzadas de programación web.</p>
+            </section>
+
+            <section id="course-topics" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">Temas a Cubrir</h2>
+                <ul class="topics-list">
+                    <li>Introducción a PHP y Aplicaciones Web</li>
+                    <li>Fundamentos del Lenguaje PHP</li>
+                    <li>Herramientas Elementales</li>
+                    <li>Diseño de Aplicaciones Web</li>
+                    <li>Programación Orientada a Objetos en PHP</li>
+                    <li>Control de Versiones con Git</li>
+                    <li>Bases de Datos MySQL</li>
+                    <li>Desarrollo de APIs</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="container course-detail-container">
+            <section id="intro-section" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">1. Introducción</h2>
+                <ul class="topics-list">
+                    <li><b>¿Qué es PHP?</b> - Lenguaje de programación del lado del servidor</li>
+                    <li><b>Aplicaciones Web</b> - Conceptos fundamentales y arquitectura</li>
+                    <li><b>Software Libre</b> - Ventajas y ecosistema</li>
+                    <li><b>Ambiente de Trabajo</b> - Configuración y herramientas necesarias</li>
+                </ul>
+            </section>
+
+            <section id="php-basics" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">2. Fundamentos de PHP</h2>
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Conceptos Básicos</h3>
+                    <ul class="topics-list">
+                        <li>Sintaxis básica y estructura</li>
+                        <li>Variables y tipos de datos</li>
+                        <li>Operadores y expresiones</li>
+                        <li>Estructuras de control</li>
+                        <li>Funciones y constantes</li>
+                    </ul>
+                    <pre><code class="language-php">
+// Ejemplo de código PHP básico
+<?php
+$mensaje = "Hola Mundo";
+function saludar($nombre) {
+    return "¡Hola, " . $nombre . "!";
+}
+echo saludar($mensaje);
+?>
+                    </code></pre>
+                </section>
+            </section>
+
+            <section id="tools-section" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">3. Herramientas Elementales</h2>
+                <ul class="topics-list">
+                    <li><b>Arrays</b> - Manejo de arreglos indexados y asociativos</li>
+                    <li><b>Strings</b> - Manipulación de cadenas</li>
+                    <li><b>Archivos</b> - Lectura y escritura</li>
+                    <li><b>Include/Require</b> - Inclusión de archivos</li>
+                </ul>
+            </section>
+
+            <section id="web-design" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">4. Diseño de Aplicaciones Web</h2>
+                <ul class="topics-list">
+                    <li><b>Formularios HTML</b> - Diseño y procesamiento</li>
+                    <li><b>Métodos HTTP</b> - GET, POST, PUT, DELETE</li>
+                    <li><b>APIs REST</b> - Diseño e implementación</li>
+                    <li><b>JSON/XML</b> - Formatos de intercambio de datos</li>
+                </ul>
+            </section>
+
+            <section id="oop-section" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">6. PHP y POO</h2>
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">Programación Orientada a Objetos</h3>
+                    <ul class="topics-list">
+                        <li>Clases y objetos</li>
+                        <li>Métodos y atributos</li>
+                        <li>Herencia y polimorfismo</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="database-section" class="course-topics-section" data-aos="fade-left">
+                <h2 class="section-subtitle">8. Bases de Datos</h2>
+                <section class="topic-subsection">
+                    <h3 class="subsection-title">MySQL y PHP</h3>
+                    <ul class="topics-list">
+                        <li>Gestión de bases de datos MySQL</li>
+                        <li>Conexión desde PHP</li>
+                        <li>CRUD operations</li>
+                        <li>Seguridad y mejores prácticas</li>
+                    </ul>
+                    <pre><code class="language-php">
+// Ejemplo de conexión a MySQL
+<?php
+$conn = new mysqli("localhost", "usuario", "contraseña", "basedatos");
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+echo "Conexión exitosa";
+?>
+                    </code></pre>
+                </section>
+            </section>
+
+            <section id="api-section" class="course-overview-section" data-aos="fade-right">
+                <h2 class="section-subtitle">9. APIs y AJAX</h2>
+                <ul class="topics-list">
+                    <li>Consumo de APIs externas</li>
+                    <li>Procesamiento de formularios</li>
+                    <li>AJAX y actualizaciones asíncronas</li>
+                    <li>Seguridad en APIs</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link">Inicio</a>
+                            <a href="materias.html" class="footer-link">Cursos</a>
+                            <a href="materiales.html" class="footer-link">Materiales</a>
+                            <a href="faq.html" class="footer-link">FAQ</a>
+                            <a href="noticias.html" class="footer-link">Noticias</a>
+                            <a href="contacto.html" class="footer-link">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Política de Privacidad</a>
+                        <a href="#" class="footer-link">Términos de Servicio</a>
+                    </div>
+                </div>
+                <!-- Sígueme en -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Sígueme en</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-youtube social-icon youtube"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">YouTube</div>
+                                    <div class="social-stats">+1000 Suscriptores</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-card">
+                            <div class="social-card-content">
+                                <i class="fab fa-linkedin-in social-icon linkedin"></i>
+                                <div class="social-info">
+                                    <div class="social-platform">LinkedIn</div>
+                                    <div class="social-stats">+500 Conexiones</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/ingenieria-software.js"></script>
+</body>
+
+</html>

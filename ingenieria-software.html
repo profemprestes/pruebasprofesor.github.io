@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería de Software - Matías Prestes</title>
+    <link rel="stylesheet" href="css/stylesi.css">
+    <link rel="stylesheet" href="css/ingenieria-software.css">
+    <link rel="stylesheet" href="css/navfooter.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Navigation -->
+        <nav class="nav-container" role="navigation">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="nav-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Matías Prestes</span>
+                        <span class="brand-slogan">Profesor de Informática</span>
+                    </div>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="materias.html" class="nav-link"><i class="fas fa-book"></i> Cursos</a></li>
+                    <li><a href="materiales.html" class="nav-link"><i class="fas fa-file-alt"></i> Materiales</a></li>
+                    <li><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="noticias.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <!-- Botón de Acción -->
+                    <li>
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" class="nav-cta" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <span>Ver Videos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header id="course-hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">Ingeniería de Software</h1>
+                <p class="hero-subtitle">Metodologías y prácticas de desarrollo profesional</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="course-main" class="course-detail-section section">
+        <!-- Contenedor principal del curso -->
+        <div class="container">
+            <!-- Sección de visión general -->
+            <section id="course-overview" class="course-section" data-aos="fade-up">
+                <h2 class="section-title">Ingeniería de Software</h2>
+                <div class="course-intro">
+                    <p class="lead-text">Desarrolla habilidades profesionales en desarrollo de software. Aprende metodologías ágiles, control de versiones y técnicas de testing para crear software de alta calidad.</p>
+                </div>
+            </section>
+
+            <!-- Grid de temas principales -->
+            <div class="course-grid">
+                <!-- Metodologías Ágiles -->
+                <section id="agile-methodologies" class="course-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Metodologías Ágiles</h3>
+                    <ul class="feature-list">
+                        <li>Scrum y Sprints</li>
+                        <li>Kanban y flujo continuo</li>
+                        <li>Roles y ceremonias</li>
+                        <li>Gestión de backlog</li>
+                    </ul>
+                </section>
+
+                <!-- Control de Versiones -->
+                <section id="version-control" class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Control de Versiones</h3>
+                    <ul class="feature-list">
+                        <li>Git fundamentals</li>
+                        <li>Branching strategies</li>
+                        <li>Colaboración en equipo</li>
+                        <li>GitHub/GitLab workflow</li>
+                    </ul>
+                </section>
+
+                <!-- Testing -->
+                <section id="testing" class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Testing y QA</h3>
+                    <ul class="feature-list">
+                        <li>Unit testing</li>
+                        <li>Integration testing</li>
+                        <li>TDD methodology</li>
+                        <li>QA best practices</li>
+                    </ul>
+                </section>
+
+                <!-- Arquitectura -->
+                <section id="architecture" class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Arquitectura de Software</h3>
+                    <ul class="feature-list">
+                        <li>Patrones de diseño</li>
+                        <li>Clean Architecture</li>
+                        <li>Microservicios</li>
+                        <li>Escalabilidad</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Sección de contenidos detallados -->
+            <section id="detailed-content" class="content-section" data-aos="fade-up">
+                <h2 class="section-title">Contenidos del Curso</h2>
+
+                <!-- 1. Introducción General -->
+                <div class="content-module">
+                    <h3 class="module-title">1. Introducción General (3 horas)</h3>
+                    <div class="module-content">
+                        <div class="topic-subsection">
+                            <h4>a) Ingeniería de software</h4>
+                            <ul class="topic-list">
+                                <li>Principios, Introducción, Análisis y Diseño de Sistemas</li>
+                                <li>Objetivos del Análisis y el Diseño</li>
+                                <li>Identificación de Necesidades</li>
+                                <li>Reconocimiento del problema</li>
+                                <li>Evaluación y Síntesis</li>
+                                <li>Modelado</li>
+                                <li>Especificación</li>
+                                <li>Revisión</li>
+                            </ul>
+                        </div>
+
+                        <div class="topic-subsection">
+                            <h4>b) Etapas del desarrollo</h4>
+                            <div class="development-stages">
+                                <div class="stage-card">
+                                    <i class="fas fa-list-check"></i>
+                                    <span>Especificación</span>
+                                </div>
+                                <div class="stage-card">
+                                    <i class="fas fa-magnifying-glass"></i>
+                                    <span>Análisis</span>
+                                </div>
+                                <div class="stage-card">
+                                    <i class="fas fa-pencil"></i>
+                                    <span>Diseño</span>
+                                </div>
+                                <div class="stage-card">
+                                    <i class="fas fa-code"></i>
+                                    <span>Codificación</span>
+                                </div>
+                                <div class="stage-card">
+                                    <i class="fas fa-vial"></i>
+                                    <span>Prueba</span>
+                                </div>
+                                <div class="stage-card">
+                                    <i class="fas fa-arrows-rotate"></i>
+                                    <span>Mantenimiento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Análisis de Sistemas -->
+                <div class="content-module">
+                    <h3 class="module-title">2. Análisis de Sistemas de información (9 horas)</h3>
+                    <div class="module-content">
+                        <div class="topic-subsection">
+                            <h4>Etapas de Investigación</h4>
+                            <div class="investigation-methods">
+                                <div class="method-card">
+                                    <i class="fas fa-eye"></i>
+                                    <h5>Observación</h5>
+                                    <p>Análisis directo del sistema en funcionamiento</p>
+                                </div>
+                                <div class="method-card">
+                                    <i class="fas fa-file-lines"></i>
+                                    <h5>Revisión de registros</h5>
+                                    <p>Análisis de documentación existente</p>
+                                </div>
+                                <div class="method-card">
+                                    <i class="fas fa-clipboard-question"></i>
+                                    <h5>Cuestionarios</h5>
+                                    <p>Manager Meeting y recolección de datos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-8. Secciones adicionales -->
+                <div class="content-module">
+                    <h3 class="module-title">3-8. Desarrollo Avanzado</h3>
+                    <div class="advanced-topics-grid">
+                        <div class="topic-card">
+                            <h4>3. Administración del proceso (27 horas)</h4>
+                            <ul class="feature-list">
+                                <li>Planeación del sistema</li>
+                                <li>Manejo de decisiones</li>
+                                <li>Definición del problema real</li>
+                                <li>Estudio de Factibilidades</li>
+                            </ul>
+                        </div>
+
+                        <div class="topic-card">
+                            <h4>4. Diagramas y Modelado (21 horas)</h4>
+                            <ul class="feature-list">
+                                <li>Modelo Esencial</li>
+                                <li>Diagramas de flujo de datos</li>
+                                <li>UML y sus componentes</li>
+                            </ul>
+                        </div>
+
+                        <div class="topic-card">
+                            <h4>5-8. Temas Finales</h4>
+                            <ul class="feature-list">
+                                <li>Diseño de Sistemas (10 horas)</li>
+                                <li>Testing y Validación (3 horas)</li>
+                                <li>Ética Profesional (7 horas)</li>
+                                <li>Tutoría de Proyecto (16 horas)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Logo y Descripción -->
+                <div class="footer-column" data-aos="fade-up">
+                    <div class="logo-wrapper">
+                        <img src="https://profematiasprestes.misitioweb.com.uy/img/logos/logofinal3.webp" alt="Logo Matías Prestes" class="footer-logo">
+                    </div>
+                    <p class="footer-description">
+                        Educación tecnológica de calidad para formar los profesionales del mañana. Especializado en programación, bases de datos y robótica.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MATIASPRESTES-jc9hz" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://uy.linkedin.com/in/mprestestecnologia" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mprestes" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contacto@matiasprestes.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accesos Directos -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-heading">Accesos Directos</h3>
+                    <div class="footer-links">
+                        <div class="links-wrapper">
+                            <a href="index.html" class="footer-link"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="materias.html" class="footer-link"><i class="fas fa-book"></i> Cursos</a>
+                            <a href="materiales.html" class="footer-link"><i class="fas fa-file-alt"></i> Materiales</a>
+                            <a href="faq.html" class="footer-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                            <a href="noticias.html" class="footer-link"><i class="fas fa-newspaper"></i> Noticias</a>
+                            <a href="contacto.html" class="footer-link"><i class="fas fa-envelope"></i> Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-heading">Legal</h3>
+                    <div class="footer-links">
+                        <a href="politica-privacidad.html" class="footer-link"><i class="fas fa-shield-alt"></i> Política de Privacidad</a>
+                        <a href="terminos-servicio.html" class="footer-link"><i class="fas fa-file-contract"></i> Términos de Servicio</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-description">Suscríbete para recibir actualizaciones y recursos exclusivos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-button">
+                            <i class="fas fa-paper-plane"></i> Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright" data-aos="fade-up">
+                &copy; <span id="current-year">2024</span> Matías Prestes. Todos los derechos reservados.
+            </div>
+        </div>
+
+
+
+        <!-- Progress bar -->
+        <div id="scroll-progress"></div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" tabindex="0" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navfooter.js" defer></script>
+    <script src="js/ingenieria-software.js"></script>
+</body>
+
+</html>
